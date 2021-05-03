@@ -1,40 +1,13 @@
 $(document).ready(function () {
-	$('.slider').slick({
-		arrows: true,
-		dots: false,
-		slidesToShow: 4,
-		responsive: [
-			{
-				breakpoint: 1500,
-				settings: {
-					slidesToShow: 3,
-				}
-			},
-			{
-				breakpoint: 1240,
-				settings: {
-					slidesToShow: 2,
-				}
-			},
-		]
-	});
-	$('.block2__slider2').slick({
-		arrows: true,
-		dots: false,
-		slidesToShow: 2,
-		responsive: [
-			{
-				breakpoint: 1240,
-				settings: {
-					slidesToShow: 1,
-				}
-			}
-		]
-	});
 	$('.header__burger').click(function (event) {
-		$('.header__burger,.sidebar').toggleClass('active');
+		$('.header__burger,.header__2row,.header__block2').toggleClass('active');
+		$('body').toggleClass('lock');
+	});
+	$('.footer__title').click(function (event) {
+		if ($('.block').hasClass('one')) {
+			$('.footer__title').not($(this)).removeClass('active');
+			$('.footer__text').not($(this).next()).slideUp(300);
+		}
+		$(this).toggleClass('active').next().slideToggle(300);
 	});
 });
-//arrows:(true п.у/false)- наличие и отсутствие стрелок
-//dots:(true/false)- точки переключения слайдов
-//adaptiveHeight:true-чтобы заработалобнадо задать align-items:flex-start для stick-track

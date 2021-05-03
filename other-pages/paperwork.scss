@@ -1,0 +1,222 @@
+@import "zerostyle.scss";
+@import "header.scss";
+@import "footer.scss";
+
+body {
+	overflow-x: hidden;
+}
+.wrapper-header {
+	width: 100%;
+	position: absolute;
+	margin-left: -7px;
+}
+.header {
+	background-color: inherit;
+	position: relative;
+	&__1row {
+		position: relative;
+		z-index: 10;
+	}
+	&__2row {
+		z-index: 10;
+		background-color: inherit;
+	}
+
+	&__title {
+		position: relative;
+		z-index: 200;
+	}
+
+	&__title-a {
+		position: relative;
+		color: #000;
+		z-index: 200;
+	}
+}
+.main {
+	transition: all 1s ease 0s;
+	position: relative;
+	z-index: 1;
+	height: 720px;
+	background: url(../img/other/kisspng-handyman-architectural-engineering-plumbing-grout-roofing-5ad0e729ab64c0.9858097115236401057021.png)
+			bottom -5px right 464px no-repeat,
+		url(../img/other/1141.png) right no-repeat;
+	&__content {
+		position: relative;
+		top: 241px;
+		max-width: 1220px;
+		padding: 0px 40px 0px 33px;
+		margin: 0 auto;
+		z-index: 10;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__title {
+		font-family: Gilroy-ExtraBold;
+		font-size: 40px;
+		font-style: normal;
+		font-weight: 900;
+		line-height: 51px;
+		letter-spacing: 0px;
+		text-align: left;
+	}
+
+	&__text {
+		font-family: Gilroy;
+		font-size: 24px;
+		font-weight: 500;
+		line-height: 28px;
+		margin-bottom: 33px;
+		margin-top: 33px;
+	}
+
+	&__text-span {
+		font-family: Gilroy-ExtraBold;
+		font-size: 24px;
+		font-weight: 800;
+		line-height: 31px;
+	}
+
+	&__button {
+		width: 202px;
+		height: 42px;
+		position: relative;
+	}
+
+	&__button-img {
+		cursor: pointer;
+		z-index: 1000;
+		border-radius: 3px;
+	}
+	&__button-p {
+		position: absolute;
+		top: 12px;
+		left: 67px;
+		font-family: Gilroy;
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 19px;
+		text-align: center;
+		color: #fff;
+	}
+}
+
+.footer {
+}
+@media (max-width: 1700px) {
+	.main {
+		background: url(../img/other/kisspng-handyman-architectural-engineering-plumbing-grout-roofing-5ad0e729ab64c0.9858097115236401057021.png)
+				bottom -5px right 264px no-repeat,
+			url(../img/other/1141.png) bottom 0 right -200px no-repeat;
+	}
+}
+@media (max-width: 1347px) {
+	.main {
+		&__title {
+			font-size: 32px;
+		}
+	}
+}
+@media (max-width: 1200px) {
+	.main {
+		background: url(../img/other/kisspng-handyman-architectural-engineering-plumbing-grout-roofing-5ad0e729ab64c0.9858097115236401057021.png)
+				bottom -5px right 64px no-repeat,
+			url(../img/other/1141.png) bottom 0 right -200px no-repeat;
+	}
+}
+@media (max-width: 980px) {
+	.main {
+		background: url(../img/other/kisspng-handyman-architectural-engineering-plumbing-grout-roofing-5ad0e729ab64c0.9858097115236401057021.png)
+			bottom -5px right 0px no-repeat;
+		background-size: 290px;
+		height: 600px;
+		&__title {
+			font-size: 26px;
+			line-height: 31px;
+		}
+		&__text {
+			font-size: 16px;
+			margin-bottom: 10px;
+			margin-top: 10px;
+		}
+		&__text-span {
+			font-size: 16px;
+		}
+	}
+}
+@media (max-width: 800px) {
+	.header {
+		padding: 31px 20px 20px 28px;
+		&__2row {
+			padding-right: 40px;
+		}
+		&__icon2 {
+			margin: 0 7px;
+		}
+	}
+	.main {
+		&__content {
+			transition: all 0.5s ease 0s;
+			padding: 0px 20px 0px 20px;
+		}
+		&__title {
+			font-size: 22px;
+			line-height: 28px;
+		}
+	}
+}
+@media (max-width: 748px) {
+	body.lock {
+		.main {
+			transition: all 0.5s ease 0s;
+			height: 720px;
+			background: url(../img/other/kisspng-handyman-architectural-engineering-plumbing-grout-roofing-5ad0e729ab64c0.9858097115236401057021.png)
+				bottom -5px right -500px no-repeat;
+			background-size: 290px;
+			&__content {
+				top: -199px;
+			}
+		}
+	}
+}
+@media (max-width: 640px) {
+	.main {
+		height: 500px;
+		background-size: 200px;
+		&__content {
+			top: 229px;
+		}
+	}
+}
+@media (max-width: 580px) {
+	.main {
+		&__title {
+			font-size: 20px;
+			line-height: 24px;
+		}
+	}
+}
+@media (max-width: 530px) {
+	.main {
+		height: 500px;
+		background-size: 200px;
+		&__content {
+			top: 129px;
+		}
+	}
+}
+@media (max-width: 400px) {
+	.main {
+		height: 680px;
+		background: url(../img/other/kisspng-handyman-architectural-engineering-plumbing-grout-roofing-5ad0e729ab64c0.9858097115236401057021.png)
+			bottom -5px center no-repeat;
+		background-size: 240px;
+		&__content {
+			top: 139px;
+		}
+	}
+	.header {
+		padding: 31px 5px 20px 28px;
+	}
+}
