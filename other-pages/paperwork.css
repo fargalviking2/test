@@ -339,10 +339,11 @@ button:hover {
 }
 
 .header__mail {
-  font-size: 17px;
+  font-size: 18px;
   line-height: 20px;
   text-align: right;
   cursor: pointer;
+  font-family: "Arial, Helvetica, sans-serif";
 }
 
 .header__mail:hover {
@@ -532,6 +533,7 @@ button:hover {
   }
   .header__2row.active {
     left: 0;
+    padding-right: 0;
   }
   .header__title {
     height: 80px;
@@ -580,6 +582,28 @@ button:hover {
   }
   .header__title-a {
     font-size: 20px;
+  }
+}
+
+@media (max-width: 380px) {
+  .header__telephone {
+    font-family: "Arial, Helvetica, sans-serif";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    margin-bottom: 8px;
+    margin-top: 2px;
+    cursor: pointer;
+  }
+  .header__mail {
+    font-size: 15px;
+    line-height: 20px;
+    text-align: right;
+    cursor: pointer;
+  }
+  .header__contacts {
+    margin-right: 15px;
   }
 }
 
@@ -1048,6 +1072,248 @@ body {
   color: #fff;
 }
 
+.block1 {
+  margin: 46px 20px 70px 20px;
+}
+
+.block1__title {
+  font-family: Gilroy-extrabold;
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 46px;
+  text-align: center;
+  margin-bottom: 37px;
+}
+
+.block1__grid-layout {
+  margin: 0 auto;
+  max-width: 1170px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+  gap: 15px;
+}
+
+.block1__grid-element-img {
+  -webkit-box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.0677994);
+          box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.0677994);
+}
+
+.block2 {
+  padding-left: 20px;
+  padding-right: 30px;
+  background: #f6f6f6;
+  padding-top: 42px;
+  padding-bottom: 52px;
+}
+
+.block2__grid-layout {
+  margin: 0 auto;
+  gap: 15px;
+  max-width: 1170px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template: 1fr / 1fr 1fr 1fr 1fr;
+}
+
+.block2__grid-element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.block2__grid-element-img {
+  max-width: 98px;
+  margin-bottom: 15px;
+}
+
+.block2__title {
+  font-family: Gilroy-extrabold;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 27px;
+  letter-spacing: 0px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.block2__text {
+  font-family: Gilroy;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 25px;
+  text-align: center;
+  max-width: 209px;
+}
+
+.block3 {
+  padding-top: 52px;
+  padding-bottom: 71px;
+}
+
+.block4 {
+  background-color: #f6f6f6;
+  padding-top: 48px;
+  padding-bottom: 74px;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.slider {
+  margin: 0 auto;
+  max-width: 1250px;
+  position: relative;
+  padding: 0px 40px;
+}
+
+.slider2 {
+  margin: 0 auto;
+  max-width: 1190px;
+  position: relative;
+  padding: 0 10px 0 65px;
+}
+
+.slider .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slider .slick-dots button:hover {
+  -webkit-transform: none;
+          transform: none;
+}
+
+.slider .slick-dots li {
+  letter-spacing: none;
+  margin: 0 10px;
+}
+
+.slider .slick-dots button {
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #e4e4e4;
+}
+
+.slider .slick-dots li.slick-active button {
+  background-color: transparent;
+  border: 1px solid #3f3db6;
+}
+
+.slider2 .slick-arrow {
+  position: absolute;
+  z-index: 100;
+  font-size: 0;
+  width: 21px;
+  height: 39px;
+  top: 50%;
+}
+
+.slider2 .slick-arrow.slick-prev {
+  background: url("../img/other/right.png") 0 0/100% no-repeat;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  right: 5px;
+}
+
+.slider2 .slick-arrow.slick-next {
+  left: 10px;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  background: url("../img/other/left.png") 0 0/100% no-repeat;
+}
+
+.block5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 73px;
+  padding-top: 52px;
+}
+
+.block5__news {
+  max-width: 1169px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: -15px;
+}
+
+.block5__event {
+  position: relative;
+  z-index: 1;
+  width: 555px;
+  height: 348px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-left: 32px;
+  padding-top: 41px;
+  background-color: #fafafb;
+  -webkit-box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.0677994);
+          box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.0677994);
+  background: url(../img/other/fuckingthink.png) top 49px right no-repeat, url(../img/other/phon-gradient.png) right no-repeat;
+}
+
+.block5__event-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  max-width: 272px;
+}
+
+.block5__event-text {
+  max-width: 241px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.block5__button {
+  margin-top: 30px;
+}
+
+.blue-span {
+  color: #86adef;
+}
+
 @media (max-width: 1700px) {
   .main {
     background: url(../img/other/kisspng-handyman-architectural-engineering-plumbing-grout-roofing-5ad0e729ab64c0.9858097115236401057021.png) bottom -5px right 264px no-repeat, url(../img/other/1141.png) bottom 0 right -200px no-repeat;
@@ -1060,9 +1326,64 @@ body {
   }
 }
 
+@media (max-width: 1240px) {
+  .slider {
+    max-width: 1000px;
+  }
+  .slider2 {
+    max-width: 900px;
+  }
+}
+
 @media (max-width: 1200px) {
   .main {
     background: url(../img/other/kisspng-handyman-architectural-engineering-plumbing-grout-roofing-5ad0e729ab64c0.9858097115236401057021.png) bottom -5px right 64px no-repeat, url(../img/other/1141.png) bottom 0 right -200px no-repeat;
+  }
+  .block1__grid-layout {
+    max-width: 892px;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr;
+    gap: 25px;
+    -webkit-column-gap: 30px;
+            column-gap: 30px;
+  }
+  .block2__grid-layout {
+    gap: 35px;
+    max-width: 605px;
+    -ms-grid-rows: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template: 1fr 1fr / 1fr 1fr;
+  }
+  .block5__news {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template: 1fr 1fr / 1fr 1fr;
+  }
+  .block5__event {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / 3;
+    width: 700px;
+    background: url(../img/other/fuckingthink.png) top 49px right no-repeat, url(../img/other/phon-gradient.png) right no-repeat;
+  }
+  .block5__block1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .block5__block2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -1070,7 +1391,8 @@ body {
   .main {
     background: url(../img/other/kisspng-handyman-architectural-engineering-plumbing-grout-roofing-5ad0e729ab64c0.9858097115236401057021.png) bottom -5px right 0px no-repeat;
     background-size: 290px;
-    height: 600px;
+    height: 630px;
+    border-bottom: 30px solid #f6f6f6;
   }
   .main__title {
     font-size: 26px;
@@ -1083,6 +1405,34 @@ body {
   }
   .main__text-span {
     font-size: 16px;
+  }
+  .slider {
+    max-width: 720px;
+  }
+  .slider2 {
+    max-width: 620px;
+  }
+  .slider2 .slick-arrow.slick-next {
+    left: 12px;
+  }
+}
+
+@media (max-width: 910px) {
+  .block1__grid-layout {
+    max-width: 575px;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template: 1fr 1fr 1fr 1fr 1fr 1fr / 1fr 1fr;
+    gap: 25px;
+    -webkit-column-gap: 30px;
+            column-gap: 30px;
+  }
+  .block2__grid-layout {
+    gap: 35px;
+    max-width: 575px;
+    -ms-grid-rows: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template: 1fr 1fr / 1fr 1fr;
   }
 }
 
@@ -1111,22 +1461,106 @@ body {
   body.lock .main {
     -webkit-transition: all 0.5s ease 0s;
     transition: all 0.5s ease 0s;
-    height: 720px;
+    height: 640px;
     background: url(../img/other/kisspng-handyman-architectural-engineering-plumbing-grout-roofing-5ad0e729ab64c0.9858097115236401057021.png) bottom -5px right -500px no-repeat;
     background-size: 290px;
   }
   body.lock .main__content {
     top: -199px;
   }
+  .block5__event {
+    width: 100%;
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 680px) {
+  .slider {
+    max-width: 295px;
+    padding: 0;
+  }
+  .slider2 {
+    max-width: 315px;
+    padding-right: 45px;
+    padding-left: 44px;
+  }
+  .slider2 .slick-arrow.slick-prev {
+    background: url("../img/other/right.png") 0 0/100% no-repeat;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+    right: 0px;
+  }
+  .slider2 .slick-arrow.slick-next {
+    left: 0px;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+    background: url("../img/other/left.png") 0 0/100% no-repeat;
+  }
 }
 
 @media (max-width: 640px) {
   .main {
-    height: 500px;
+    height: 530px;
     background-size: 200px;
   }
   .main__content {
     top: 229px;
+  }
+  body.lock .main {
+    height: 730px;
+  }
+  .block1 {
+    margin-bottom: 20px;
+  }
+  .block1__grid-layout {
+    max-width: 400px;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template: 1fr 1fr 1fr 1fr 1fr 1fr / 1fr 1fr;
+    gap: 25px;
+  }
+  .block1__grid-element-img {
+    width: 175px;
+  }
+  .block5__news {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .block5__event {
+    background: url(../img/other/fuckingthink.png) bottom center no-repeat, url(../img/other/phon-gradient.png) right no-repeat;
+  }
+  .block5__block1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .block5__block2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .block5__event-title {
+    font-size: 20px;
+    line-height: 24px;
+    max-width: none;
+    margin-right: 25px;
+  }
+  .block5__event-text {
+    font-size: 14px;
+    line-height: 20px;
+    max-width: none;
+    margin-right: 20px;
   }
 }
 
@@ -1135,11 +1569,29 @@ body {
     font-size: 20px;
     line-height: 24px;
   }
+  .block1__title {
+    font-size: 23px;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    line-height: 30px;
+  }
+  .block2__grid-layout {
+    gap: 35px;
+    max-width: 575px;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template: 1fr 1fr 1fr 1fr / 1fr;
+  }
+  .block2__text {
+    max-width: 400px;
+  }
 }
 
 @media (max-width: 530px) {
   .main {
-    height: 500px;
+    height: 530px;
     background-size: 200px;
   }
   .main__content {
@@ -1147,16 +1599,72 @@ body {
   }
 }
 
+@media (max-width: 435px) {
+  .block1__grid-layout {
+    max-width: 330px;
+    gap: 15px;
+  }
+  .block1__grid-element-img {
+    width: 155px;
+  }
+}
+
 @media (max-width: 400px) {
   .main {
-    height: 680px;
+    height: 630px;
     background: url(../img/other/kisspng-handyman-architectural-engineering-plumbing-grout-roofing-5ad0e729ab64c0.9858097115236401057021.png) bottom -5px center no-repeat;
-    background-size: 240px;
+    background-size: 180px;
   }
   .main__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     top: 139px;
+  }
+  .main__title {
+    text-align: center;
   }
   .header {
     padding: 31px 5px 20px 28px;
+  }
+  .block1__grid-layout {
+    max-width: 300px;
+    gap: 15px;
+  }
+  .block1__grid-element-img {
+    width: 135px;
+  }
+  .block3,
+  .block4 {
+    padding-bottom: 40px;
+  }
+  .block5 {
+    padding-bottom: 30px;
+  }
+  .block5__event {
+    background: url(../img/other/fuckingthink.png) bottom center no-repeat, url(../img/other/phon-gradient.png) right no-repeat;
+    background-size: 243px;
+  }
+  .block5__event-title {
+    font-size: 20px;
+    line-height: 24px;
+    max-width: none;
+    margin-right: 15px;
+  }
+  .block5__event-text {
+    font-size: 14px;
+    line-height: 20px;
+    max-width: none;
+    margin-right: 15px;
+  }
+  .block5__button {
+    margin-top: 10px;
   }
 }

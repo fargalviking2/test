@@ -121,10 +121,11 @@ button:hover {
 		background: url(../img/icons/telephone.png);
 	}
 	&__mail {
-		font-size: 17px;
+		font-size: 18px;
 		line-height: 20px;
 		text-align: right;
 		cursor: pointer;
+		font-family: "Arial, Helvetica, sans-serif";
 	}
 	&__mail:hover {
 		text-decoration: underline;
@@ -295,6 +296,7 @@ button:hover {
 		}
 		&__2row.active {
 			left: 0;
+			padding-right: 0;
 		}
 		&__title {
 			height: 80px;
@@ -340,5 +342,26 @@ button:hover {
 		&__title-a {
 			font-size: 20px;
 		}
+	}
+}
+@media (max-width: 380px) {
+	.header__telephone {
+		font-family: "Arial, Helvetica, sans-serif";
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 24px;
+		text-align: left;
+		margin-bottom: 8px;
+		margin-top: 2px;
+		cursor: pointer;
+	}
+	.header__mail {
+		font-size: 15px;
+		line-height: 20px;
+		text-align: right;
+		cursor: pointer;
+	}
+	.header__contacts {
+		margin-right: 15px;
 	}
 }
