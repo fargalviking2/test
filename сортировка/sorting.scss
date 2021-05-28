@@ -1,0 +1,76 @@
+@import "../тест/zerostyle.scss";
+
+.wrapper {
+	overflow: hidden;
+	width: 100%;
+	background-color: rgba(254, 144, 144, 0.1);
+	min-height: 100%;
+}
+button {
+	transition: all 0.3s ease 0s;
+}
+button:hover {
+	transform: translate(0, 5px);
+}
+.sort-buttons {
+	max-width: 1200px;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	margin-top: 80px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+.question {
+	&__button {
+		font-size: 18px;
+		width: 260px;
+		height: 55px;
+		background: linear-gradient(90deg, #f6bd60 0%, #e88952 100%);
+		color: #fff;
+		border-radius: 50px 50px;
+	}
+}
+.green {
+}
+.purple {
+}
+.red {
+}
+.grid-layout {
+	max-width: 1200px;
+	display: grid;
+	grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+	margin: 0 auto;
+	gap: 10px;
+	margin-bottom: 50px;
+}
+.grid-element {
+	width: 290px;
+	height: 290px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	display: none;
+	font-size: 35px;
+
+	&__red {
+		background: rgb(204, 136, 136);
+	}
+	&__green {
+		background: rgb(104, 173, 104);
+	}
+	&__purple {
+		background: rgb(185, 96, 185);
+	}
+}
+._active {
+	display: flex;
+}
+.block {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 0;
+}
