@@ -88,8 +88,7 @@ h6 {
 }
 
 .wrapper {
-  min-width: 100%;
-  background-color: rgba(254, 144, 144, 0.1);
+  width: 100%;
   min-height: 100%;
 }
 
@@ -104,7 +103,9 @@ button:hover {
 }
 
 .sort-buttons {
-  width: 1200px;
+  width: 1240px;
+  padding-left: 20px;
+  padding-right: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -128,7 +129,9 @@ button:hover {
 }
 
 .grid-layout {
-  width: 1200px;
+  width: 1240px;
+  padding-left: 20px;
+  padding-right: 20px;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 1fr 1fr 1fr 1fr;

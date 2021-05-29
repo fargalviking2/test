@@ -1,9 +1,8 @@
 @import "../тест/zerostyle.scss";
 
 .wrapper {
-	overflow: hidden;
 	width: 100%;
-	background-color: rgba(254, 144, 144, 0.1);
+
 	min-height: 100%;
 }
 button {
@@ -13,7 +12,9 @@ button:hover {
 	transform: translate(0, 5px);
 }
 .sort-buttons {
-	width: 1200px;
+	width: 1240px;
+	padding-left: 20px;
+	padding-right: 20px;
 	display: flex;
 	justify-content: space-between;
 	margin: 0 auto;
@@ -38,7 +39,9 @@ button:hover {
 .red {
 }
 .grid-layout {
-	width: 1200px;
+	width: 1240px;
+	padding-left: 20px;
+	padding-right: 20px;
 	display: grid;
 	grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
 	margin: 0 auto;
