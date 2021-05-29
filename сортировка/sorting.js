@@ -1,13 +1,17 @@
 "use strict"
 
 const redBlocks = document.getElementsByClassName('grid-element__red');
-const greenBlocks = document.querySelectorAll('.grid-element__green');
-const purpleBlocks = document.querySelectorAll('.grid-element__purple');
+const greenBlocks = document.getElementsByClassName('grid-element__green');
+const purpleBlocks = document.getElementsByClassName('grid-element__purple');
 
 const redButton = document.querySelector('.red');
 const greenButton = document.querySelector('.green');
 const purpleButton = document.querySelector('.purple');
 const summButton = document.querySelector('.summ');
+
+const redButtonX2 = document.querySelector('.red-x2');
+const greenButtonX2 = document.querySelector('.green-x2');
+const purpleButtonX2 = document.querySelector('.purple-x2');
 
 const redButtonAmmount = document.querySelector('.red-ammount');
 const greenButtonAmmount = document.querySelector('.green-ammount');
@@ -85,3 +89,41 @@ purpleButton.addEventListener("click", function (e) {
 // redButtonAmmount.addEventListener('click', () => {
 // 	redButtonAmmount.textContent = `Красных: ${redBlocksAmmount}`
 // });
+
+
+redButtonX2.addEventListener('click', () => {
+	let redBlocksLength = redBlocks.length;
+	for (var i = 0; i < redBlocksLength; i++) {
+		console.log('yes');
+		const cloneRedblock = redBlocks[i].cloneNode(true);
+		redBlocks[i].after(cloneRedblock);
+		redBlocksAmmount = redBlocks.length;
+		redButtonAmmount.textContent = `Красных: ${redBlocksAmmount}`;
+		summButtonAmmount += 1;
+		summButton.textContent = `Всего: ${summButtonAmmount}`;
+	}
+});
+greenButtonX2.addEventListener('click', () => {
+	let greenBlocksLength = greenBlocks.length;
+	for (var i = 0; i < greenBlocksLength; i++) {
+		console.log('yes');
+		const cloneGreenblock = greenBlocks[i].cloneNode(true);
+		greenBlocks[i].after(cloneGreenblock);
+		greenBlocksAmmount = greenBlocks.length;
+		greenButtonAmmount.textContent = `Зелёных: ${greenBlocksAmmount}`;
+		summButtonAmmount += 1;
+		summButton.textContent = `Всего: ${summButtonAmmount}`;
+	}
+});
+purpleButtonX2.addEventListener('click', () => {
+	let purpleBlocksLength = purpleBlocks.length;
+	for (var i = 0; i < purpleBlocksLength; i++) {
+		console.log('yes');
+		const clonePurpleblock = purpleBlocks[i].cloneNode(true);
+		purpleBlocks[i].after(clonePurpleblock);
+		purpleBlocksAmmount = purpleBlocks.length;
+		purpleButtonAmmount.textContent = `Фиолетовых: ${purpleBlocksAmmount}`;
+		summButtonAmmount += 1;
+		summButton.textContent = `Всего: ${summButtonAmmount}`;
+	}
+});

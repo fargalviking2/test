@@ -105,7 +105,7 @@ button:hover {
 }
 
 .sort-buttons {
-  max-width: 1200px;
+  width: 1200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -129,7 +129,7 @@ button:hover {
 }
 
 .grid-layout {
-  max-width: 1200px;
+  width: 1200px;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 1fr 1fr 1fr 1fr;
