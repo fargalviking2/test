@@ -88,8 +88,7 @@ h6 {
 }
 
 .wrapper {
-  overflow: hidden;
-  width: 100%;
+  min-width: 100%;
   background-color: rgba(254, 144, 144, 0.1);
   min-height: 100%;
 }
