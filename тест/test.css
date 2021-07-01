@@ -120,6 +120,8 @@ button:hover {
   max-width: 1200px;
   margin: 0 auto;
   padding-top: 80px;
+  padding-left: 15px;
+  padding-right: 15px;
   color: #866;
 }
 
@@ -320,4 +322,130 @@ button:hover {
   color: #fff;
   border-radius: 50px 50px;
   margin-left: 50px;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    padding-top: 50px;
+  }
+  .questions {
+    padding-bottom: 20px;
+    margin-top: 30px;
+  }
+  .questions__title {
+    margin: 0 auto;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 16px;
+    max-width: 600px;
+    margin-bottom: 30px;
+    margin-top: 40px;
+  }
+  .questions__title-big {
+    font-size: 18px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+  .title {
+    font-size: 16px;
+  }
+  .qt {
+    font-size: 18px;
+  }
+  .question {
+    margin-top: 20px;
+  }
+  .question__button {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 14px;
+    width: 200px;
+    height: 45px;
+    border-radius: 30px 10px;
+  }
+  .question__button-big {
+    height: 55px;
+    width: 220px;
+    padding: 0 20px;
+  }
+  .return-button {
+    width: 250px;
+    height: 50px;
+    font-size: 20px;
+  }
+  .results__button {
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+  }
+  .popup__title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 750px) {
+  .container {
+    padding-top: 40px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .questions {
+    padding-bottom: 00px;
+    margin-top: 30px;
+  }
+  .questions__title {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 14px;
+    max-width: 600px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .questions__title-big {
+    font-size: 14px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .title {
+    font-size: 14px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .qt {
+    font-size: 16px;
+  }
+  .return-button {
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+  }
+  .results__button {
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+  }
+  .popup__title {
+    font-size: 16px;
+  }
+  .question {
+    margin-top: 20px;
+  }
+  .question__button {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 14px;
+    width: 150px;
+    height: 45px;
+    border-radius: 15px 15px;
+  }
+  .question__button-big {
+    height: 65px;
+    width: 150px;
+    font-size: 12px;
+    padding: 0 20px;
+  }
 }
