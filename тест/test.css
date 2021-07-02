@@ -111,6 +111,7 @@ button:hover {
 }
 
 .wrapper {
+  min-height: 100%;
   overflow: hidden;
   width: 100%;
   background-color: rgba(254, 144, 144, 0.1);
@@ -123,12 +124,17 @@ button:hover {
   padding-left: 15px;
   padding-right: 15px;
   color: #866;
+  min-height: 100%;
 }
 
 .title {
   font-size: 26px;
   text-align: center;
   line-height: 34px;
+}
+
+.title2 {
+  display: none;
 }
 
 .questions {
@@ -248,7 +254,7 @@ button:hover {
 }
 
 .popup__close {
-  background: url(../img/other/krest.png) 0 0/100% no-repeat;
+  background: url(krest.png) 0 0/100% no-repeat;
   position: absolute;
   right: 10px;
   top: 10px;
@@ -388,6 +394,7 @@ button:hover {
     padding-top: 40px;
     padding-left: 0;
     padding-right: 0;
+    height: 100%;
   }
   .questions {
     padding-bottom: 00px;
@@ -451,7 +458,16 @@ button:hover {
 }
 
 @media (max-width: 530px) {
-  .wrapper {
+  .title,
+  .question,
+  .questions,
+  .results {
     display: none;
+  }
+  .title2 {
+    display: block;
+    font-size: 18px;
+    margin: 20px;
+    text-align: center;
   }
 }
