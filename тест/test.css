@@ -110,6 +110,10 @@ button:hover {
           transform: translate(0, 5px);
 }
 
+.pink {
+  color: #ad4c82;
+}
+
 .wrapper {
   min-height: 100%;
   overflow: hidden;
