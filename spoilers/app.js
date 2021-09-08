@@ -9,7 +9,7 @@ Vue.createApp({
 				{ id: 5 },
 				{ id: 6 },
 			],
-			coursesCounter: 1,
+			coursesCounter: 0,
 		};
 	},
 	methods: {
