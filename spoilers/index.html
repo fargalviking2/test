@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>spoilers</title>
+	<link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+	<div class="wrapper" id="app">
+		<div class="container">
+			<div class="grid-template">
+				<div v-for="(course, idx) in courses" class="grid-template__card">
+					<div class="grid-template__block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+						pariatur dolorem tempora sint fugiat dicta corrupti nobis incidunt facilis quidem!</div>
+					<button @click="spoiler(idx)" type="submit" class="grid-template__spoiler">show
+						document</button>
+					<div v-if="coursesCounter == courses[idx].id" class="grid-template__spoiler-content ">document
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://unpkg.com/vue@next"></script>
+	<script src="./app.js"></script>
+</body>
+
+</html>
