@@ -19,12 +19,28 @@ const App = {
 				],
 			],
 			coursesCounter: 0,
+			//если документы будут приходить с бэка,не как выше,массивами в массиве, а обычным массивом вот 2-й способ,смотри то,что закомменторовано. 
+			// documents: [
+			// 	{ src: 1 },
+			// 	{ src: 2 },
+			// 	{ src: 3 },
+			// 	{ src: 4 },
+			// 	{ src: 5 },
+			// 	{ src: 6 },
+			// 	{ src: 7 },
+			// 	{ src: 8 },
+			// 	{ src: 9 },
+			// ],
+			// documentsСounter: 0,
 		};
 	},
 	methods: {
 		onSpoiler(idx, it) {
 			if (this.coursesCounter == this.courses[idx][it.position].id) {
 				this.coursesCounter = 0
+				//ищем нужный документ в массиве и получаем его src. В свойстве укажем реальный путь к файлу и подставим в html
+				// this.documentsСounter = ++it.position + idx * 3 - 1;
+				// console.log(this.documents[this.documentsСounter].src);
 			}
 			else { this.coursesCounter = this.courses[idx][it.position].id }
 		}
@@ -40,7 +56,6 @@ app.component('type-block', {
 			});
 		}
 	},
-	// props: ['actualCost', 'needCost',],
 	template: `
 	<div class="grid-template__card">
 		<div class="grid-template__block">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
