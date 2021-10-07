@@ -1,0 +1,118 @@
+.our-services {
+	padding-top: 100px;
+
+	padding-bottom: 100px;
+	&__vinyl {
+		position: relative;
+	}
+	&__right-img {
+		position: absolute;
+		right: 0;
+		top: 0;
+		z-index: 0;
+		clip-path: polygon(0 0, 100% 0%, 100% 100%, 58% 100%);
+	}
+	&__content {
+		position: relative;
+		z-index: 2;
+		margin-bottom: 100px;
+		padding-left: 122px;
+	}
+	&__title {
+		font-size: 24px;
+		color: #a1a1a1;
+		text-transform: uppercase;
+		margin-bottom: 76px;
+		line-height: 29px;
+	}
+	&__text {
+		display: inline-block;
+		font-size: 18px;
+		max-width: 975px;
+		font-weight: 400;
+		line-height: 30px;
+		letter-spacing: 0em;
+		text-align: left;
+		margin-bottom: 105px;
+	}
+	&__kpmf {
+		display: flex;
+		margin-bottom: 48px;
+		align-items: center;
+	}
+	&__kpmf-img {
+		margin-right: 36px;
+		min-width: 121px;
+	}
+	&__kpmf-text {
+		font-size: 14px;
+		max-width: 974px;
+		font-weight: 400;
+		line-height: 30px;
+	}
+	&__orafol {
+		display: flex;
+		align-items: center;
+	}
+	&__orafol-img {
+		margin-right: 36px;
+		min-width: 119px;
+	}
+	&__orafol-text {
+		font-size: 14px;
+		max-width: 974px;
+		font-weight: 400;
+		line-height: 30px;
+	}
+	&__polyurethane {
+		position: relative;
+	}
+	&__left-img {
+		clip-path: polygon(0 0, 100% 0%, 42% 100%, 0% 100%);
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+	}
+	&__content2 {
+		padding-right: 100px;
+		display: flex;
+		flex-direction: column;
+		align-items: end;
+	}
+	&__title2 {
+		margin-bottom: 92px;
+	}
+	&__text {
+	}
+	&__3m {
+		display: flex;
+		margin-bottom: 65px;
+	}
+	&__3m-text {
+		margin-right: 57px;
+	}
+	&__3m-img {
+		min-width: 69px;
+		padding-right: 22px;
+	}
+	&__suntek {
+		display: flex;
+		margin-bottom: 42px;
+	}
+	&__suntek-text {
+		margin-right: 18px;
+	}
+	&__3mv {
+		display: flex;
+	}
+	&__3mv-text {
+		margin-right: 18px;
+	}
+	&__3mv-img {
+		min-width: 127px;
+	}
+}
+.our-services__content2 * {
+	text-align: right;
+}

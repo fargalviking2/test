@@ -1,0 +1,152 @@
+img {
+	max-width: 100%;
+}
+.swiper-container {
+	position: relative;
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+	width: 100%;
+	position: relative;
+	overflow-y: hidden;
+}
+.swiper-button-prev1 {
+	position: absolute;
+	top: 50%;
+	left: 113px;
+	z-index: 2;
+	margin-top: -30px;
+	cursor: pointer;
+}
+.swiper-button-next1 {
+	z-index: 2;
+	position: absolute;
+	top: 50%;
+	right: 113px;
+	margin-top: -30px;
+	cursor: pointer;
+}
+.image-slider .swiper-pagination {
+	margin-bottom: 34px;
+}
+.image-slider .swiper-pagination-bullet {
+	height: 17px;
+	width: 17px;
+	background: #fff;
+	opacity: 1;
+}
+.image-slider .swiper-pagination-bullet-active {
+	height: 17px;
+	width: 17px;
+	background-color: transparent;
+	border: 3px solid #ffffff;
+}
+.slider1 {
+	&__shadow {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		max-width: 50%;
+	}
+	&__title {
+		left: 100px;
+		top: 62px;
+		z-index: 3;
+		position: absolute;
+		max-width: 430px;
+		font-size: 64px;
+		color: #fff;
+		line-height: 78px;
+	}
+
+	&__cost {
+		position: absolute;
+		left: 100px;
+		top: 250px;
+		z-index: 3;
+		font-size: 48px;
+		color: #e40614;
+		line-height: 59px;
+	}
+
+	&__button {
+		position: absolute;
+		justify-self: flex-end;
+		bottom: 176px;
+		left: 100px;
+		z-index: 3;
+	}
+
+	&__call-us {
+		position: absolute;
+		z-index: 300;
+		right: 114px;
+		bottom: 45px;
+		width: 99px;
+		height: 99px;
+	}
+	&__call-us-img:hover {
+		transform: scale(1.05);
+	}
+	&__call-us-img {
+		border-radius: 50%;
+	}
+	&__touchscreen {
+		display: none;
+	}
+}
+
+.image-slider2 {
+	margin-top: 100px;
+	margin-bottom: 129px;
+	margin-left: 100px;
+	overflow-x: hidden;
+}
+
+.slider3 {
+	cursor: pointer;
+	margin-top: 100px;
+	margin-bottom: 109px;
+	&__container {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+	&__button {
+	}
+	&__card {
+		display: flex;
+		flex-direction: column;
+		max-width: 730px;
+		padding: 25px;
+	}
+	&__title {
+		font-size: 24px;
+		line-height: 29px;
+		text-transform: uppercase;
+		margin-bottom: 31px;
+	}
+	&__text {
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 29px;
+	}
+	&__prev {
+		position: absolute;
+		top: 58%;
+	}
+	&__next {
+		position: absolute;
+		top: 58%;
+	}
+}
+.image-slider4 {
+	display: none;
+}
+.slider5-wrapper {
+	display: none;
+}
+.slider5__cost {
+	color: #a1a1a1;
+}

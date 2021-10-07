@@ -1,0 +1,123 @@
+.testimonials {
+  padding: 100px 0px 73px 0px;
+}
+
+.testimonials__button {
+  margin-bottom: 95px;
+}
+
+.testimonials__content {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 25px;
+}
+
+.testimonials__darkline {
+  position: absolute;
+  background: #0b0c0e;
+  height: 265px;
+  top: 0;
+  width: 100%;
+}
+
+.testimonials__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 80px;
+  margin-left: 80px;
+}
+
+.testimonials__column-img {
+  position: relative;
+  z-index: 3;
+}
+
+.testimonials__column-title {
+  position: relative;
+  z-index: 3;
+  color: #a1a1a1;
+  margin-top: 15px;
+  margin-bottom: 41px;
+  text-transform: uppercase;
+  max-width: 260px;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.testimonials__column-text {
+  position: relative;
+  z-index: 3;
+  color: #fff;
+  max-width: 408px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+}
+
+.testimonials__column-text2 {
+  padding-top: 3px;
+}
+
+.testimonials__column:before {
+  display: none;
+}
+
+.testimonials__shadow-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.before-after-lines {
+  position: relative;
+}
+
+.before-after-lines:before {
+  display: block;
+  content: "";
+  height: 370px;
+  top: -80px;
+  background: #1e2026;
+  width: 20px;
+  position: absolute;
+  z-index: 3;
+  left: -85px;
+  -webkit-transform: rotate(38deg);
+          transform: rotate(38deg);
+}
+
+.before-after-lines:after {
+  content: "";
+  height: 370px;
+  top: -80px;
+  background: #1e2026;
+  width: 20px;
+  position: absolute;
+  z-index: 3;
+  left: 490px;
+  -webkit-transform: rotate(38deg);
+          transform: rotate(38deg);
+}

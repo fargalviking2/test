@@ -1,0 +1,140 @@
+.costs {
+  padding-bottom: 100px;
+}
+
+.costs__line1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.costs__touchscreen {
+  display: none;
+}
+
+.costs__line1-column2 {
+  padding-right: 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 12px;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1150px;
+}
+
+.costs__column2-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.costs__img {
+  margin-bottom: 30px;
+}
+
+.costs__title {
+  font-size: 18px;
+  color: #a1a1a1;
+  line-height: 22px;
+  max-width: 310px;
+  text-align: center;
+  min-height: 44px;
+  margin-bottom: 17px;
+}
+
+.costs__title2 {
+  max-width: 195px;
+}
+
+.costs__img2 {
+  position: relative;
+  width: 300px;
+  margin-right: -10px;
+}
+
+.costs__img2-left {
+  position: relative;
+  z-index: 2;
+}
+
+.costs__img2-right {
+  position: absolute;
+  right: 0;
+  top: -30px;
+  z-index: 1;
+}
+
+.costs__img3 {
+  position: relative;
+  width: 290px;
+}
+
+.costs__img3-right {
+  position: absolute;
+  right: 0;
+  top: -45px;
+  z-index: 1;
+}
+
+.costs__line2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 22px;
+  position: relative;
+}
+
+.costs__line2-text {
+  padding: 28px;
+  padding-left: 100px;
+  max-width: 575px;
+  width: 500px;
+}
+
+.costs__line2-column2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 1094px;
+  padding-right: 195px;
+}
+
+.costs__line2-column2-cost {
+  color: #a1a1a1;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.costs__border {
+  position: absolute;
+  border-bottom: 2px solid #868686;
+  width: 100%;
+  bottom: 0;
+}

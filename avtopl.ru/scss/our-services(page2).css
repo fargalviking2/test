@@ -1,0 +1,162 @@
+.our-services {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.our-services__vinyl {
+  position: relative;
+}
+
+.our-services__right-img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 58% 100%);
+          clip-path: polygon(0 0, 100% 0%, 100% 100%, 58% 100%);
+}
+
+.our-services__content {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 100px;
+  padding-left: 122px;
+}
+
+.our-services__title {
+  font-size: 24px;
+  color: #a1a1a1;
+  text-transform: uppercase;
+  margin-bottom: 76px;
+  line-height: 29px;
+}
+
+.our-services__text {
+  display: inline-block;
+  font-size: 18px;
+  max-width: 975px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 105px;
+}
+
+.our-services__kpmf {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 48px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.our-services__kpmf-img {
+  margin-right: 36px;
+  min-width: 121px;
+}
+
+.our-services__kpmf-text {
+  font-size: 14px;
+  max-width: 974px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.our-services__orafol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.our-services__orafol-img {
+  margin-right: 36px;
+  min-width: 119px;
+}
+
+.our-services__orafol-text {
+  font-size: 14px;
+  max-width: 974px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.our-services__polyurethane {
+  position: relative;
+}
+
+.our-services__left-img {
+  -webkit-clip-path: polygon(0 0, 100% 0%, 42% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0%, 42% 100%, 0% 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.our-services__content2 {
+  padding-right: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.our-services__title2 {
+  margin-bottom: 92px;
+}
+
+.our-services__3m {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 65px;
+}
+
+.our-services__3m-text {
+  margin-right: 57px;
+}
+
+.our-services__3m-img {
+  min-width: 69px;
+  padding-right: 22px;
+}
+
+.our-services__suntek {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 42px;
+}
+
+.our-services__suntek-text {
+  margin-right: 18px;
+}
+
+.our-services__3mv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.our-services__3mv-text {
+  margin-right: 18px;
+}
+
+.our-services__3mv-img {
+  min-width: 127px;
+}
+
+.our-services__content2 * {
+  text-align: right;
+}

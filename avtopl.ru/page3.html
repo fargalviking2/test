@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Page2</title>
+	<link rel="stylesheet" href="scss/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+	<script src="//unpkg.com/alpinejs" defer></script>
+</head>
+
+<body>
+	<div x-data="todos()" class="wrapper">
+		<div class="container">
+			<header class="header">
+				<div class="header__burger">
+					<span></span>
+				</div>
+				<div class="header__logo">
+					<div class="header__logo-img">
+						<img src="img/headerLogo.png" alt="headerLogo">
+					</div>
+					<div class="header__logo-title">DETAILING STUDIO</div>
+				</div>
+				<div class="header__right">
+					<div class="header__line1">
+						<div class="header__small-title">
+							<a href="##" class="header__small-title-a">Услуги и цены</a>
+						</div>
+						<div class="header__small-title">
+							<a href="##" class="header__small-title-a">Наши работы</a>
+						</div>
+						<div class="header__small-title">
+							<a href="##" class="header__small-title-a">Отзывы</a>
+						</div>
+						<div class="header__small-title">
+							<a href="##" class="header__small-title-a">Контакты</a>
+						</div>
+					</div>
+					<div class="header__line2">
+						<div class="header__text header__text-display-none">
+							<a href="##" class="header__text-a">Без выходных: с 10:00 до 20:00</a>
+						</div>
+						<div class="header__text header__text-mr0">
+							<a href="##" class="header__text-a">г. Москва, Кутузовский проспект 3</a>
+						</div>
+						<div class="header__line2-center">
+							<div class="header__small-img header__small-img-vk">
+								<a href="##" target="_blank">
+									<img class="w100p" src="img/headerVk.png" alt="headerVk">
+								</a>
+							</div>
+							<div class="header__small-img ">
+								<a href="##" target="_blank">
+									<img class="w100p" src="img/headerCamera.png" alt="headerCamera">
+								</a>
+							</div>
+						</div>
+						<div class="header__text  header__text-mr0">
+							<a href="tel:+7 (495) 410 19 99" class="header__text-a header__text-tel">+7 (495) 410 19 99</a>
+						</div>
+					</div>
+					<div class="header__call-us">
+						<div class="header__call-us-title">заказать звонок</div>
+						<a href="#popup2-call" class="header__call-us-a">
+							<img class="slider1__call-us-img" src="img/call-us.png" alt="call-us">
+						</a>
+					</div>
+				</div>
+				<div class="header__phone">
+					<a href="tel:+7 (495) 410 19 99"><img src="img/phone.png" alt=""></a>
+
+				</div>
+			</header>
+		</div>
+		<div class="reviews-page3">
+			<img src="img/p3-big-car.png" alt="big-car" class="reviews-page3__img">
+			<div class="reviews-page3__content">
+				<div class="reviews-page3__line">
+					<div class="reviews-page3__shadow-left">
+						<div class="reviews-page3__shadow-line">
+							<div class="reviews-page3__stars">
+								<img src="img/star.png" class="reviews-page3__star" alt="star">
+								<img src="img/star.png" class="reviews-page3__star" alt="star">
+								<img src="img/star.png" class="reviews-page3__star" alt="star">
+								<img src="img/star.png" class="reviews-page3__star" alt="star">
+								<img src="img/empty-star.png" class="reviews-page3__star" alt="star">
+							</div>
+							<div class="reviews-page3__title">Артём</div>
+							<time class="reviews-page3__date">05.09.21</time>
+						</div>
+						<p class="reviews-page3__text">Недавно обновил автомобиль. Сразу поставил антигравийную пленку на
+							крылья, бампер, передние зеркала и капот. Несколько месяцев езжу - ни царапинки! Мастер использовал
+							лекала точно для моей модели, к результату совершенно нет претензий. И пленка сейчас как новая :)
+						</p>
+					</div>
+					<div class="reviews-page3__shadow-right">
+						<div class="reviews-page3__shadow-line">
+							<div class="reviews-page3__stars">
+								<img src="img/star.png" class="reviews-page3__star" alt="star">
+								<img src="img/star.png" class="reviews-page3__star" alt="star">
+								<img src="img/star.png" class="reviews-page3__star" alt="star">
+								<img src="img/star.png" class="reviews-page3__star" alt="star">
+								<img src="img/empty-star.png" class="reviews-page3__star" alt="star">
+							</div>
+							<div class="reviews-page3__title">василиса</div>
+							<time class="reviews-page3__date">05.09.21</time>
+						</div>
+						<p class="reviews-page3__text">Воспользовавшись услугами и помощью компании Авто Тюнинг я наконец
+							декорировала свой автомобиль. Красота. Виниловый стайлинг помог машинке превзойти себя. К тому же
+							работа мастерами выполнена на высочайшем уровне. Спасибо ребяткам за совет и новомодный внешний вид
+							авто.
+						</p>
+					</div>
+				</div>
+				<div class="reviews-page3__line">
+					<div class="reviews-page3__shadow-left">
+						<div class="reviews-page3__shadow-line">
+							<div class="reviews-page3__stars">
+								<img src="img/star.png" class="reviews-page3__star" alt="star">
+								<img src="img/star.png" class="reviews-page3__star" alt="star">
+								<img src="img/star.png" class="reviews-page3__star" alt="star">
+								<img src="img/star.png" class="reviews-page3__star" alt="star">
+								<img src="img/empty-star.png" class="reviews-page3__star" alt="star">
+							</div>
+							<div class="reviews-page3__title">Артём</div>
+							<time class="reviews-page3__date">05.09.21</time>
+						</div>
+						<p class="reviews-page3__text">Недавно обновил автомобиль. Сразу поставил антигравийную пленку на
+							крылья, бампер, передние зеркала и капот. Несколько месяцев езжу - ни царапинки! Мастер использовал
+							лекала точно для моей модели, к результату совершенно нет претензий. И пленка сейчас как новая :)
+						</p>
+					</div>
+					<div class="reviews-page3__shadow-right ">
+						<div class="reviews-page3__shadow-line">
+							<div class="reviews-page3__stars">
+								<img src="img/star.png" class="reviews-page3__star" alt="star">
+								<img src="img/star.png" class="reviews-page3__star" alt="star">
+								<img src="img/star.png" class="reviews-page3__star" alt="star">
+								<img src="img/star.png" class="reviews-page3__star" alt="star">
+								<img src="img/empty-star.png" class="reviews-page3__star" alt="star">
+							</div>
+							<div class="reviews-page3__title">василиса</div>
+							<time class="reviews-page3__date">05.09.21</time>
+						</div>
+						<p class="reviews-page3__text">Воспользовавшись услугами и помощью компании Авто Тюнинг я наконец
+							декорировала свой автомобиль. Красота. Виниловый стайлинг помог машинке превзойти себя. К тому же
+							работа мастерами выполнена на высочайшем уровне. Спасибо ребяткам за совет и новомодный внешний вид
+							авто.
+						</p>
+					</div>
+				</div>
+				<div class="reviews-page3__line reviews-page3__line-dn">
+					<div class="reviews-page3__shadow-left">
+						<div class="reviews-page3__shadow-line">
+							<div class="reviews-page3__stars">
+								<img src="img/star.png" class="reviews-page3__star" alt="star">
+								<img src="img/star.png" class="reviews-page3__star" alt="star">
+								<img src="img/star.png" class="reviews-page3__star" alt="star">
+								<img src="img/star.png" class="reviews-page3__star" alt="star">
+								<img src="img/empty-star.png" class="reviews-page3__star" alt="star">
+							</div>
+							<div class="reviews-page3__title">Артём</div>
+							<time class="reviews-page3__date">05.09.21</time>
+						</div>
+						<p class="reviews-page3__text">Недавно обновил автомобиль. Сразу поставил антигравийную пленку на
+							крылья, бампер, передние зеркала и капот. Несколько месяцев езжу - ни царапинки! Мастер использовал
+							лекала точно для моей модели, к результату совершенно нет претензий. И пленка сейчас как новая :)
+						</p>
+					</div>
+					<div class="reviews-page3__shadow-right">
+						<div class="reviews-page3__shadow-line">
+							<div class="reviews-page3__stars">
+								<img src="img/star.png" class="reviews-page3__star" alt="star">
+								<img src="img/star.png" class="reviews-page3__star" alt="star">
+								<img src="img/star.png" class="reviews-page3__star" alt="star">
+								<img src="img/star.png" class="reviews-page3__star" alt="star">
+								<img src="img/empty-star.png" class="reviews-page3__star" alt="star">
+							</div>
+							<div class="reviews-page3__title">василиса</div>
+							<time class="reviews-page3__date">05.09.21</time>
+						</div>
+						<p class="reviews-page3__text">Воспользовавшись услугами и помощью компании Авто Тюнинг я наконец
+							декорировала свой автомобиль. Красота. Виниловый стайлинг помог машинке превзойти себя. К тому же
+							работа мастерами выполнена на высочайшем уровне. Спасибо ребяткам за совет и новомодный внешний вид
+							авто.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="mb100">
+			<a href="##"><button class="standart__button2 btn-standart-hover">написать отзыв</button></a>
+		</div>
+		<div class="write-review">
+			<div class="write-review__car-right">
+				<img src="img/p3-car-right.png" alt="car right">
+			</div>
+			<div class="write-review__shadow">
+				<form action="##" class="write-review__form">
+					<input type="text" placeholder="Введите ваше имя"
+						class="write-review__name write-review__input contacts__input">
+					<input type="text" placeholder="ваш отзыв"
+						class="write-review__review write-review__input contacts__input">
+					<div class="write-review__line3">
+						<div class="write-review__title">оценка</div>
+						<div class="write-review__stars">
+							<input hidden class="write-review__input2" x-model="stars" type="text">
+							<template x-if="stars>0"><img x-on:click="stars=1" src="img/star.png" class="reviews-page3__star"
+									alt="star"></template>
+							<template x-if="stars>1"><img x-on:click="stars=2" src="img/star.png" class="reviews-page3__star"
+									alt="star"></template>
+							<template x-if="stars>2"><img x-on:click="stars=3" src="img/star.png" class="reviews-page3__star"
+									alt="star"></template>
+							<template x-if="stars>3"><img x-on:click="stars=4" src="img/star.png" class="reviews-page3__star"
+									alt="star"></template>
+							<template x-if="stars>4"><img x-on:click="stars=5" src="img/star.png" class="reviews-page3__star"
+									alt="star"></template>
+							<template x-if="stars<1"><img x-on:click="stars=1" src="img/empty-star.png"
+									class="reviews-page3__star" alt="star"></template>
+							<template x-if="stars<2"><img x-on:click="stars=2" src="img/empty-star.png"
+									class="reviews-page3__star" alt="star"></template>
+							<template x-if="stars<3"><img x-on:click="stars=3" src="img/empty-star.png"
+									class="reviews-page3__star" alt="star"></template>
+							<template x-if="stars<4"><img x-on:click="stars=4" src="img/empty-star.png"
+									class="reviews-page3__star" alt="star"></template>
+							<template x-if="stars<5"><img x-on:click="stars=5" src="img/empty-star.png"
+									class="reviews-page3__star" alt="star"></template>
+						</div>
+						<button type="submit"
+							class="write-review__button standart__button btn-standart-hover">отправить</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="contacts contacts2">
+			<div class="mb100">
+				<a href="##"><button class="standart__button2 btn-standart-hover">все отзывы</button></a>
+			</div>
+			<div class="contacts__content">
+				<div class="contacts__shadow"></div>
+				<div class="contacts__black">
+					<img class="contacts__big-img" src="img/contacts-car.png" alt="car">
+				</div>
+				<div class="contacts__car"></div>
+				<div class="contacts__container">
+					<div class="contacts__column">
+						<div class="contacts__small-title">
+							<h3>Оставьте заявку!</h3>
+						</div>
+						<form action="##" class="contacts__form">
+							<input type="text" placeholder="Введите ваше имя" class="contacts__name contacts__input">
+							<input type="email" placeholder="e-mail" class="contacts__mail contacts__input">
+							<input type="tel" placeholder="+7 (___) ___ __ __" class="contacts__tel contacts__input">
+							<div class="contacts__privacy">
+								<input type="checkbox" class="custom-checkbox" id="ch6" name="ch6" value="yes">
+								<label for="ch6"></label>
+								<div class="contacts__text">
+									<p>Нажимая на кнопку, вы солгашаетесь с политикой конфиденциальности</p>
+								</div>
+							</div>
+							<button type="submit"
+								class="standart__button standart__button-big btn-standart-hover">отправить</button>
+						</form>
+					</div>
+					<div class="contacts__column contacts__column2">
+						<div class="contacts__tel-title ">
+							<a href="tel:+7 (495) 410 19 99">8 (495) 410 19 99</a>
+						</div>
+						<div class="contacts__small-title contacts__small-title2">
+							<h3>остались вопросы? Звоните!</h3>
+						</div>
+						<div>
+							<a href="#popup2-call"><button class="standart__button btn-standart-hover">заказать
+									звонок</button></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="footer__content">
+				<div class="footer__column">
+					<h3 class="footer__title">Приезжайте</h3>
+				</div>
+				<div class="footer__column">
+					<div class="footer__title">звоните</div>
+					<div class="footer__tel">
+						<a href="tel:+7 (495) 410 19 99" class="footer__tel-a">+7 (495) 410 19 99</a>
+					</div>
+				</div>
+				<div class="footer__column">
+					<div class="footer__title">следуйте</div>
+					<div class="footer__social-media">
+						<div class="map__small-img">
+							<a href="##" target="_blank">
+								<img src="img/headerVk.png" alt="headerVk">
+							</a>
+						</div>
+						<div class="map__small-img">
+							<a href="##" target="_blank">
+								<img src="img/headerCamera.png" alt="headerVk">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="footer__column">
+					<div class="footer__title">пишите</div>
+					<div class="footer__email ">
+						<img src="img/mail.png" alt="headerVk" class="map__email-img">
+						<div class="map__email-text">
+							<p>info@avtopl.ru</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div id="popup-write" class="popup">
+			<div class="popup__body">
+				<a href="##" class="popup__area"></a>
+				<div class="popup__content">
+					<a href="##" class="popup__close"></a>
+					<div class="popup__title ">запишитесь и мы вам перезвоним!</div>
+					<form action="##" class="popup__form">
+						<input type="text" placeholder="Введите ваше имя" class="popup__name popup__input">
+						<input type="email" placeholder="e-mail" class="popup__mail popup__input">
+						<input type="tel" placeholder="+7 (___) ___ __ __" class="popup__tel popup__input">
+						<div class="popup__privacy">
+							<input type="checkbox" class="custom-checkbox custom-checkbox-popup" id="ch8" name="ch8"
+								value="yes">
+							<label for="ch8"></label>
+							<div class="popup__text">
+								<p>Нажимая на кнопку, вы солгашаетесь с политикой конфиденциальности</p>
+							</div>
+						</div>
+						<button type="submit"
+							class="popup__btn standart__button btn-standart-hover mx-auto">отправить</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div id="popup2-call" class="popup">
+			<div class="popup__body">
+				<a href="##" class="popup__area"></a>
+				<div class="popup__content popup__content2">
+					<a href="##" class="popup__close"></a>
+					<div class="popup__title ">мы вам перезвоним!</div>
+					<form action="##" class="popup__form">
+						<input type="text" placeholder="Введите ваше имя" class="popup__name popup__input popup__name2">
+						<input type="tel" placeholder="+7 (___) ___ __ __" class="popup__tel popup__input">
+						<div class="popup__privacy">
+							<input type="checkbox" class="custom-checkbox custom-checkbox-popup" id="ch9" name="ch9"
+								value="yes">
+							<label for="ch9"></label>
+							<div class="popup__text">
+								<p>Нажимая на кнопку, вы солгашаетесь с политикой конфиденциальности</p>
+							</div>
+						</div>
+						<button type="submit"
+							class="popup__btn standart__button btn-standart-hover mx-auto">отправить</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+	<script>
+		function todos() {
+			return {
+				stars: 5,
+			};
+		}
+	</script>
+	<script src="js/main.js"></script>
+</body>

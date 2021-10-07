@@ -1,0 +1,78 @@
+.map * {
+	color: #a1a1a1;
+}
+.header__logo-title {
+	color: #e40614;
+}
+.map {
+	position: relative;
+	min-height: 595px;
+	&__logo {
+		margin-top: 45px;
+		margin-bottom: 70px;
+	}
+	&__shadow {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		max-height: 595px;
+		background: #0f1013;
+		z-index: 2;
+		width: 1044px;
+		clip-path: polygon(0 0%, 100% 0, 40% 100%, 0% 100%);
+	}
+	&__yandex-map {
+		position: absolute;
+		right: 0;
+		top: 1px;
+		height: 594px;
+		overflow-y: hidden;
+		width: 78%;
+		z-index: 1;
+	}
+	&__column {
+		z-index: 3;
+		position: relative;
+		padding-left: 100px;
+		display: flex;
+		flex-direction: column;
+		max-width: 50%;
+	}
+	&__contacts {
+		display: flex;
+	}
+	&__tel {
+		display: flex;
+		align-items: center;
+		margin-right: 131px;
+		margin-bottom: 84px;
+	}
+	&__tel-img {
+		margin-right: 15px;
+	}
+	&__email-img {
+		margin-right: 25px;
+	}
+	&__tel-text {
+	}
+	&__email {
+		display: flex;
+		align-items: center;
+		margin-bottom: 84px;
+	}
+	&__email-text {
+	}
+	&__address {
+		margin-bottom: 84px;
+	}
+	&__no-weekends {
+		margin-bottom: 82px;
+	}
+	&__social-media {
+		display: flex;
+	}
+	&__small-img {
+		margin-right: 38px;
+	}
+}

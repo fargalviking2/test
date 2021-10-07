@@ -1,0 +1,156 @@
+a {
+	color: #fff;
+}
+* {
+	color: #fff;
+	font-family: Montserrat;
+	font-weight: 600;
+}
+.btn-standart-hover {
+	transition: all 0.3s ease 0s;
+}
+.btn-standart-hover:hover {
+	background-color: #fff;
+	color: #000;
+}
+.fw600 {
+	font-weight: 600;
+}
+.mb30 {
+	margin-bottom: 30px;
+}
+.t-right {
+	text-align: right;
+}
+.mx-auto {
+	max-width: 250px;
+	margin: 0 auto;
+}
+.mb100 {
+	margin-bottom: 100px;
+}
+.w100p {
+	width: 100%;
+}
+.standart__button {
+	width: 250px;
+	height: 70px;
+	background: #1f1f1f;
+	border: 2px solid #bfbfbf;
+	font-size: 18px;
+	color: #c9c9c9;
+	line-height: 22px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+.standart__button2 {
+	width: 411.5px;
+	height: 67.5px;
+	background: rgba(0, 0, 0, 0.63);
+	color: #a1a1a1;
+	clip-path: polygon(0 0%, 100% 0, 88% 100%, 0% 100%);
+	font-size: 18px;
+	line-height: 22px;
+	// padding-right: 45px;
+	text-align: left;
+	padding-left: 100px;
+	text-transform: uppercase;
+}
+.wrapper {
+	width: 100%;
+	overflow: hidden;
+	min-height: 100vh;
+	background: #1e2026;
+}
+.container {
+	max-width: 1760px;
+	padding: 0 100px;
+	margin: 0 auto;
+	position: relative;
+}
+.header {
+	display: flex;
+	justify-content: space-between;
+	min-height: 197px;
+	align-items: center;
+
+	&__burger {
+		display: none;
+	}
+	&__phone {
+		display: none;
+	}
+	&__logo {
+		display: flex;
+	}
+
+	&__logo-img {
+		margin-right: 25px;
+	}
+
+	&__logo-title {
+		font-family: Montserrat;
+		font-size: 24px;
+		font-weight: 600;
+		line-height: 29px;
+		color: #e40614;
+		max-width: 150px;
+	}
+
+	&__right {
+		width: 100%;
+		max-width: 968px;
+	}
+
+	&__line1 {
+		display: flex;
+		margin-top: 56px;
+		margin-bottom: 50px;
+		justify-content: space-between;
+	}
+
+	&__small-title {
+	}
+
+	&__small-title-a {
+		text-transform: uppercase;
+		font-family: Montserrat;
+		font-style: normal;
+		font-size: 16px;
+		font-weight: 600;
+		line-height: 20px;
+		letter-spacing: 0.1em;
+	}
+
+	&__line2 {
+		display: flex;
+		align-items: center;
+		margin-bottom: 59px;
+	}
+	&__line2-center {
+		display: flex;
+		margin-right: 60px;
+		margin-left: 40px;
+	}
+
+	&__text {
+		margin-right: 85px;
+	}
+	&__text-a {
+		color: #a1a1a1;
+		white-space: nowrap;
+		font-family: Montserrat;
+		font-size: 14px;
+		font-weight: 600;
+		line-height: 17px;
+	}
+	&__text-mr0 {
+		margin-right: 0px;
+	}
+	&__small-img {
+		margin-left: 50px;
+	}
+	&__call-us {
+		display: none;
+	}
+}

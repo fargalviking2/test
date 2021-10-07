@@ -1,0 +1,53 @@
+.write-review {
+	position: relative;
+	margin-bottom: 100px;
+	&__car-right {
+		display: flex;
+		justify-content: end;
+	}
+	&__shadow {
+		position: absolute;
+		left: 0;
+		top: 0;
+		background: #0f1013;
+		width: calc((1104 / 1920) * 100%);
+		height: 100%;
+		clip-path: polygon(0 0, 57% 0, 100% 100%, 0% 100%);
+		padding-left: 100px;
+		padding-top: 69px;
+		padding-bottom: 51px;
+	}
+	&__input2 {
+		color: black;
+	}
+	&__form {
+		display: flex;
+		flex-direction: column;
+	}
+	&__name {
+		margin-bottom: 76px;
+	}
+	&__review {
+		margin-bottom: 135px;
+	}
+	&__line3 {
+		display: flex;
+		align-items: center;
+	}
+	&__input {
+		max-width: 525px;
+	}
+	&__title {
+		font-size: 18px;
+		margin-right: 50px;
+		line-height: 22px;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		color: #c9c9c9;
+	}
+	&__stars {
+		margin-right: 189px;
+	}
+	&__button {
+	}
+}
