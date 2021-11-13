@@ -1,0 +1,37 @@
+// @import "zerostyle.scss";
+
+img {
+	max-width: 100%;
+}
+h2 {
+	font-size: 40px;
+}
+h3 {
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.wrapper {
+	width: 100%;
+	overflow: hidden;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 50px 30px;
+}
+.btn {
+	border-radius: 15px;
+	transition: all 0.9s ease 0s;
+}
+.rotate {
+	transform: rotate(-540deg);
+}
+.rotate-full {
+	transform: rotate(720deg);
+}
+@media (max-width: 640px) {
+	h3 {
+		font-size: 16px;
+	}
+}
