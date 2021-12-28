@@ -1,3 +1,38 @@
+@font-face {
+	font-family: "Cera Pro";
+	src: url("../fonts/CeraPro-Medium.eot");
+	src: local("Cera Pro Medium"), local("CeraPro-Medium"),
+		url("../fonts/CeraPro-Medium.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/CeraPro-Medium.woff2") format("woff2"), url("../fonts/CeraPro-Medium.woff") format("woff"),
+		url("../fonts/CeraPro-Medium.ttf") format("truetype");
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Cera Pro";
+	src: url("../fonts/CeraPro-Bold.eot");
+	src: local("Cera Pro Bold"), local("CeraPro-Bold"), url("../fonts/CeraPro-Bold.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/CeraPro-Bold.woff2") format("woff2"), url("../fonts/CeraPro-Bold.woff") format("woff"),
+		url("../fonts/CeraPro-Bold.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Cera Pro";
+	src: url("../fonts/CeraPro-Regular.eot");
+	src: local("Cera Pro Regular"), local("CeraPro-Regular"),
+		url("../fonts/CeraPro-Regular.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/CeraPro-Regular.woff2") format("woff2"), url("../fonts/CeraPro-Regular.woff") format("woff"),
+		url("../fonts/CeraPro-Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+.wrapper {
+	font-family: "Cera Pro";
+}
 .mx-auto {
 	margin-left: auto;
 	margin-right: auto;
@@ -6,6 +41,8 @@
 p {
 	font-size: 26px;
 	line-height: 26px;
+
+	font-weight: normal;
 }
 .wrapper {
 	width: 100%;
@@ -65,10 +102,51 @@ p {
 	background: url(../img/circle.png) no-repeat;
 	background-size: contain;
 }
-.big-number{position: absolute;left: -10px;top: 60px;font-size: 130px; color: #8c8e91; text-shadow: 3px 3px 10px #000;}
-.blue-text{color: #4496b6;}
-.swiper-button-prev1, .swiper-button-prev2{border: 20px solid transparent; border-right: 20px solid green;left: 0; top: 50%;	position: absolute; z-index: 2;}
-.swiper-button-next1, .swiper-button-next2{border: 20px solid transparent; border-left: 20px solid green; right: 0; top: 50%; position: absolute; z-index: 2;}
+.bg-img2 {
+	background: url(../img/circle2.png) no-repeat;
+	background-size: contain;
+}
+.bg-img3 {
+	background: url(../img/circle3.png) no-repeat;
+	background-size: contain;
+}
+.bg-img4 {
+	background: url(../img/circle4.png) no-repeat;
+	background-size: contain;
+}
+.bg-img5 {
+	background: url(../img/circle5.png) no-repeat;
+	background-size: contain;
+}
+.big-number {
+	position: absolute;
+	left: -10px;
+	top: 60px;
+	font-size: 130px;
+	color: #8c8e91;
+	text-shadow: 3px 3px 10px #000;
+}
+.blue-text {
+	color: #4496b6;
+}
+.swiper-button-prev1,
+.swiper-button-prev2 {
+	border: 20px solid transparent;
+	border-right: 20px solid green;
+	left: 0;
+	top: 400px;
+	position: absolute;
+	z-index: 2;
+}
+.swiper-button-next1,
+.swiper-button-next2 {
+	border: 20px solid transparent;
+	border-left: 20px solid green;
+	right: 0;
+	top: 400px;
+	position: absolute;
+	z-index: 2;
+}
 .popup {
 	position: fixed;
 	width: 100%;
@@ -183,7 +261,6 @@ p {
 .popup * {
 	color: #c9c9c9;
 }
-
 
 @media (min-width: 640px) {
 	.container {
