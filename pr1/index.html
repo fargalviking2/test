@@ -15,34 +15,36 @@
 <body>
 	<div class="wrapper">
 		<nav>
-			<div class="flex-col flex fixed right-4 top-4 z-10">
-				<a href="#main" class="text-center text-xl  mb-2">
-					<p class="blue-text hover:font-bold ">Главная</p>
-				</a>
-				<a href="#about-me" class="text-center text-xl mb-2">
+			<div class="flex-col flex fixed right-6 z-10 menu">
+				<button id="linkMain" class="text-center text-xl  mb-3">
+					<p class="blue-text transition-all hover:font-bold ">Главная</p>
+				</button>
+				<button id="linkAboutMe" class="text-center text-xl mb-3">
 					<p class="blue-text hover:font-bold ">Обо мне</p>
-				</a>
-				<a href="#about-book" class="text-center text-xl mb-2 ">
+				</button>
+				<button id="linkAboutBook" class="text-center text-xl mb-3 ">
 					<p class="blue-text hover:font-bold ">О книге</p>
-				</a>
-				<a href="##" class="text-center text-xl mb-2">
+				</button>
+				<button id="linkBookContent" class="text-center text-xl mb-3">
 					<p class="blue-text hover:font-bold ">Содержание</p>
-				</a>
-				<a href="#reviews" class="text-center text-xl mb-2">
+				</button>
+				<button id="linkReviews" class="text-center text-xl mb-3">
 					<p class="blue-text hover:font-bold ">Отзывы</p>
-				</a>
-				<a href="#buy" class="text-center text-xl mb-4">
+				</button>
+				<button id="linkBuy" class="text-center text-xl mb-5">
 					<p class="blue-text hover:font-bold">Купить</p>
-				</a>
+				</button>
 				<div class="flex">
-					<a href="##"><img src="img/телефон.png" alt="" class="w-10 mr-3"></a>
-					<a href="##"><img src="img/телега.png" alt="" class="w-10 mr-3"></a>
-					<a href="##"><img src="img/почта.png" alt="" class="w-10 mr-3"></a>
-					<a href="##"><img src="img/whatsapp.svg" alt="" class="w-10 mr-3"></a>
+
+					<a href="##"><img src="img/телега.png" alt="" class="w-10 mr-2"></a>
+					<a href="##"><img src="img/whatsapp.svg" alt="" class="w-10 mr-2"></a>
+					<a href="##"><img src="img/почта.png" alt="" class="w-10 mr-2"></a>
+
+					<a href="##"><img src="img/телефон.png" alt="" class="w-10 "></a>
 				</div>
 			</div>
 		</nav>
-		<div class="container px-5 mx-auto">
+		<div class="container pl-20 ">
 			<div id="main" class="book">
 				<div class="book__img">
 					<img class="book__img-img" src="img/cover.jpg" alt="">
@@ -65,7 +67,7 @@
 						пространства и получать подсказки, как и в каком направлении
 						развиваться.</p>
 					<p class="book__text mb-8">Закажи мою книгу прямо сейчас и давай достигать поставленные цели вместе! </p>
-					<a href="#popup-buy"><button class="book__button mx-auto">Заказать</button></a>
+					<a href="#buy"><button class="book__button mx-auto">Заказать</button></a>
 
 				</div>
 
@@ -114,11 +116,10 @@
 				<p class="mr-52 text-2xl">Самое интересное - на все вопросы ты ответишь сам после каждой главы, письменно,
 					для этого выделены специальные строки.</p>
 			</div>
-			<div class="about-book2"></div>
 			<div id="uniqueness-book" class="uniqueness-book">
 				<h2 class="text-4xl mt-4 mb-12 blue-text font-medium">Уникальность книги</h2>
 				<div class="relative">
-					<div class="w-80 overflow-hidden">
+					<div class="w-80 hidden overflow-hidden">
 						<div class="image-slider2 swiper-container relative">
 							<div class="swiper-wrapper ">
 								<div class="swiper-slide slider1 px-16">
@@ -140,7 +141,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="ml-80 absolute top-0">
+					<div class="">
 						<p class="mb-4"><span class="font-medium">Коучмент</span>– термин, введенный мною для описания нового
 							инструмента
 							анализа поступающей информации и понимания, какое данная
@@ -156,13 +157,39 @@
 					</div>
 				</div>
 			</div>
-			<div class="book-content"></div>
+			<div id="book-content" class="book-content ">
+				<h2 class="text-4xl mt-4 mb-10 blue-text font-medium">Содержание книги</h2>
+				<div class="image-slider3 swiper-container overflow-x-hidden shadow-page relative">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide shadow-page">
+							<div class="">
+								<img src="img/Untitled-1.png" alt="">
+							</div>
+						</div>
+						<div class="swiper-slide shadow-page">
+							<div class="">
+								<img src="img/Untitled-2.png" alt="">
+							</div>
+						</div>
+						<div class="swiper-slide shadow-page">
+							<div class="">
+								<img src="img/Untitled-3.png" alt="">
+							</div>
+						</div>
+					
+					</div>
+					<div class="swiper-button-prev3 slider1-nav">
+					</div>
+					<div class="swiper-button-next3 slider1-nav">
+					</div>
+				</div>
+			</div>
 			<div id="reviews" class="reviews  mb-24">
 				<h2 class="text-4xl mt-4 mb-10 blue-text font-medium">Отзывы</h2>
 				<div class="image-slider swiper-container relative">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide slider1 px-16">
-							<div class="rounded-xl bg-green-300 p-24">
+							<div class="rounded-xl bg-green-200 p-24">
 								<p class="mb-4">Если мы с вами захотим определить «пространство», то, скорее всего, увязнем в
 									долгой дискуссии. Является ли оно просто бесконечной пустотой, лежащей в основе
 									всего? Или это пустота между объектами? А что, если пространство - это физическая
@@ -183,7 +210,7 @@
 							</div>
 						</div>
 						<div class="swiper-slide slider1 px-16">
-							<div class="rounded-xl bg-green-300 p-24">
+							<div class="rounded-xl bg-green-200 p-24">
 								<p class="mb-4">Самое главное, что надо знать про бег и про личное развитие, это то, что побеждают
 									маленькие шаги. Не так важно, какую цель вы поставите, важно, что вы ее поставите. А дальше - каждый
 									день вы будете к ней приближаться на один шаг. Проще всего это делать при помощи трекера привычек
@@ -214,7 +241,7 @@
 							</div>
 						</div>
 						<div class="swiper-slide slider1 px-16">
-							<div class="rounded-xl bg-green-300 p-24">
+							<div class="rounded-xl bg-green-200 p-24">
 								<p class="mb-4">«Рыбы не говорят о воде,» -- гласит восточная поговорка. Люди также редко задумываются о
 									пространстве, хотя не только в нем живут и перемещаются – на самом деле, люди думают в пространстве,
 									не особенно этого замечая. «Правые» и «левые» политические партии, высокие идеи и низменные порывы,
@@ -250,7 +277,7 @@
 							</div>
 						</div>
 						<div class="swiper-slide slider1 px-16">
-							<div class="rounded-xl bg-green-300 p-24">
+							<div class="rounded-xl bg-green-200 p-24">
 								<p class="mb-4">Книга Кристины Акименко перепрошивает мозги в наступившей новой реальности. Коучмент,
 									сканирование пространства, освоение личной территории — это набор-минимум, который вы вынесете из неё.
 									В наборе-оптимуме будут полезные вопросы и выводы самого автора, который на личном примере показывает,
@@ -262,10 +289,14 @@
 									из небанального опыта, страсти к путешествиям и самоисследованию, выводы острого аналитичного ума и
 									продолжительных поисков личной истины.
 								</p>
-								<p class="mb-4">«Выходить из окружения с любовью» рекомендует Кристина в одной из глав. А как в это окружение войти? А как самому стать окружением, в которое стремятся попасть другие? За этими вопросами – добро пожаловать в книгу. Желаю вам не сбиться с намеченного пути и использовать все инструменты из плана-оптимума.
+								<p class="mb-4">«Выходить из окружения с любовью» рекомендует Кристина в одной из глав. А как в это
+									окружение войти? А как самому стать окружением, в которое стремятся попасть другие? За этими вопросами
+									– добро пожаловать в книгу. Желаю вам не сбиться с намеченного пути и использовать все инструменты из
+									плана-оптимума.
 								</p>
 								<p class="mb-6">Рекомендую к прочтению и размышлению!</p>
-								<p class="text-right font-medium">Екатерина Иноземцева. Автор бестселлеров «Стартап без купюр», «Как стать популярным автором. Тексты на службе личного бренда. 5 шагов».</p>
+								<p class="text-right font-medium">Екатерина Иноземцева. Автор бестселлеров «Стартап без купюр», «Как
+									стать популярным автором. Тексты на службе личного бренда. 5 шагов».</p>
 							</div>
 						</div>
 					</div>
@@ -287,8 +318,8 @@
 						<h4 class="font-medium text-xl mb-4">PDF-версия – 500 рублей</h4>
 						<h4 class="font-medium text-xl mb-4">Также доступна для предзаказа аудио-книга</h4>
 					</div>
-					<a class="w-full" href="#popup-buy"><button class="book__button h-20 mb-4">Купить</button></a>
-					
+					<a class="w-full" target="_blank" href="pay.html"><button class="book__button h-20 mb-4">Купить</button></a>
+
 				</div>
 			</div>
 		</div>

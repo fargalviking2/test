@@ -22,7 +22,7 @@
   font-style: normal;
 }
 
-.wrapper {
+* {
   font-family: "Cera Pro";
 }
 
@@ -33,7 +33,7 @@
 
 p {
   font-size: 26px;
-  line-height: 26px;
+  line-height: 30px;
   font-weight: normal;
 }
 
@@ -44,6 +44,12 @@ p {
 
 .container {
   width: 100%;
+}
+
+.menu {
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
 }
 
 .book {
@@ -61,7 +67,7 @@ p {
 }
 
 .book__img-img {
-  min-width: 370px;
+  min-width: 430px;
 }
 
 .book__text-short {
@@ -95,6 +101,12 @@ p {
   line-height: 70px;
   background: -webkit-gradient(linear, left top, right top, from(#52a0fd), color-stop(80%, #00e2fa), to(#00e2fa));
   background: linear-gradient(to right, #52a0fd 0%, #00e2fa 80%, #00e2fa 100%);
+}
+
+.shadow-page {
+  --tw-shadow: 10px 10px 50px 10px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+          box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .bg-img {
@@ -133,6 +145,17 @@ p {
 
 .blue-text {
   color: #4496b6;
+}
+
+.li-circle::before {
+  position: absolute;
+  content: "";
+  left: 40px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #000;
+  top: 14px;
 }
 
 .swiper-button-prev1,
