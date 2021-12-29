@@ -67,20 +67,20 @@
 						пространства и получать подсказки, как и в каком направлении
 						развиваться.</p>
 					<p class="book__text mb-8">Закажи мою книгу прямо сейчас и давай достигать поставленные цели вместе! </p>
-					<a href="#buy"><button class="book__button mx-auto">Заказать</button></a>
+					<a href="#buy"><button class="standart__button mx-auto">Заказать</button></a>
 
 				</div>
 
 			</div>
 			<div id="about-me" class="flex mb-24">
 				<div class="mr-28">
-					<img src="img/image10.jpg" alt="" class="w-96">
+					<img src="img/image10.jpg" alt="" class="women-img">
 				</div>
 				<div class="">
-					<h2 class="text-4xl mt-4 mb-10 blue-text font-medium">Обо мне</h2>
-					<p class="mb-8">Я построила бизнес в области ИТ и консалтинга с оборотом 300 млн рублей. Кроме того, я много
+					<h2 class="text-4xl mt-10 mb-10 blue-text font-medium">Обо мне</h2>
+					<p class="mb-10 about-me__text">Я построила бизнес в области ИТ и консалтинга с оборотом 300 млн рублей. Кроме того, я много
 						инвестирую в качестве бизнес -ангела.</p>
-					<p class="">Занимаюсь марафонским бегом. Воспитываю троих детей из разных поколений.</p>
+					<p class="about-me__text">Занимаюсь марафонским бегом. Воспитываю троих детей из разных поколений.</p>
 				</div>
 			</div>
 			<div id="about-book" class="about-book mb-24">
@@ -116,7 +116,7 @@
 				<p class="mr-52 text-2xl">Самое интересное - на все вопросы ты ответишь сам после каждой главы, письменно,
 					для этого выделены специальные строки.</p>
 			</div>
-			<div id="uniqueness-book" class="uniqueness-book">
+			<div id="uniqueness-book" class="uniqueness-book mb-24">
 				<h2 class="text-4xl mt-4 mb-12 blue-text font-medium">Уникальность книги</h2>
 				<div class="relative">
 					<div class="w-80 hidden overflow-hidden">
@@ -157,9 +157,9 @@
 					</div>
 				</div>
 			</div>
-			<div id="book-content" class="book-content ">
-				<h2 class="text-4xl mt-4 mb-10 blue-text font-medium">Содержание книги</h2>
-				<div class="image-slider3 swiper-container overflow-x-hidden shadow-page relative">
+			<div id="book-content" class="book-content  mb-24  relative">
+				<h2 class="text-4xl mt-4 mb-12 blue-text font-medium">Содержание книги</h2>
+				<div class="image-slider3 swiper-container mx-20  overflow-x-hidden shadow-page">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide shadow-page">
 							<div class="">
@@ -305,6 +305,7 @@
 					<div class="swiper-button-next1 slider1-nav">
 					</div>
 				</div>
+				<a href="#popup-review"><button class="standart__button mx-auto mt-12">Оставить отзыв</button></a>
 			</div>
 			<div id="buy" class="buy-book mb-24">
 				<h2 class="text-4xl mt-4 mb-10 blue-text font-medium">Купить книгу</h2>
@@ -318,13 +319,13 @@
 						<h4 class="font-medium text-xl mb-4">PDF-версия – 500 рублей</h4>
 						<h4 class="font-medium text-xl mb-4">Также доступна для предзаказа аудио-книга</h4>
 					</div>
-					<a class="w-full" target="_blank" href="pay.html"><button class="book__button h-20 mb-4">Купить</button></a>
+					<a class="w-full" target="_blank" href="pay.html"><button class="standart__button h-20 mb-4">Купить</button></a>
 
 				</div>
 			</div>
 		</div>
-		<footer class="p-6 bg-gray-200">
-			<div class="container mx-auto">
+		<footer class="py-6 bg-gray-200">
+			<div class="container pl-20">
 				<div class="flex justify-between">
 					<div class="">
 						<div class="flex mb-7">
@@ -356,24 +357,18 @@
 			</div>
 		</footer>
 	</div>
-	<div id="popup-buy" class="popup">
+	<div id="popup-review" class="popup">
 		<div class="popup__body">
 			<a href="##" class="popup__area"></a>
 			<div class="popup__content">
 				<a href="##" class="popup__close"></a>
-				<div class="popup__title ">запишитесь и мы вам перезвоним!</div>
+				<h4 class="text-black text-3xl my-6">Пришли свой отзыв на мою книгу</h4>
 				<form action="##" class="popup__form">
-					<input type="text" placeholder="Введите ваше имя" class="popup__name popup__input">
-					<input type="email" placeholder="e-mail" class="popup__mail popup__input">
-					<input type="tel" placeholder="+7 (___) ___ __ __" class="popup__tel popup__input">
-					<div class="popup__privacy">
-						<input type="checkbox" class="custom-checkbox custom-checkbox-popup" id="ch2" name="ch2" value="yes">
-						<label for="ch2"></label>
-						<div class="popup__text">
-							<p>Нажимая на кнопку, вы солгашаетесь с политикой конфиденциальности</p>
-						</div>
-					</div>
-					<button type="submit" class="popup__btn standart__button btn-standart-hover mx-auto">отправить</button>
+					<input type="text" placeholder="Ваше имя" class="popup__name popup__input mb-4">
+					<input type="email" placeholder="e-mail" class="popup__mail popup__input mb-4">
+					<textarea class="popup__input mb-6" placeholder="Ваше сообщение" name="" id="" cols="30" rows="10"></textarea>
+					<div class="relative z-10 standart__button mx-auto"><button type="submit" class="">Отправить</button></div>
+					
 				</form>
 			</div>
 		</div>

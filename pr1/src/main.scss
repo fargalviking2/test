@@ -84,26 +84,12 @@ p {
 	&__text {
 	}
 
-	&__button {
-		font-size: 36px;
-		color: #fff;
-		width: 100%;
-		max-width: 350px;
-
-		border-radius: 35px;
-
-		display: flex;
-
-		align-items: center;
-
-		justify-content: center;
-
-		line-height: 70px;
-		background: linear-gradient(to right, #52a0fd 0%, #00e2fa 80%, #00e2fa 100%);
-	}
+	
 }
-.shadow-page{--tw-shadow: 10px 10px 50px 10px rgba(0, 0, 0, 0.25);
-	box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);}
+.shadow-page {
+	--tw-shadow: 10px 10px 50px 10px rgba(0, 0, 0, 0.25);
+	box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
 .bg-img {
 	background: url(../img/circle.png) no-repeat;
 	background-size: contain;
@@ -146,7 +132,8 @@ p {
 	top: 14px;
 }
 .swiper-button-prev1,
-.swiper-button-prev2 {
+.swiper-button-prev2,
+.swiper-button-prev3 {
 	border: 20px solid transparent;
 	border-right: 20px solid green;
 	left: 0;
@@ -155,13 +142,27 @@ p {
 	z-index: 2;
 }
 .swiper-button-next1,
-.swiper-button-next2 {
+.swiper-button-next2,
+.swiper-button-next3 {
 	border: 20px solid transparent;
 	border-left: 20px solid green;
 	right: 0;
 	top: 400px;
 	position: absolute;
 	z-index: 2;
+}
+.swiper-button-next3,
+.swiper-button-prev3 {
+	top: 50%;
+	transform: translate(0, 50%);
+}
+.women-img {
+	min-width: 570px;
+}
+.about-me__text {
+	max-width: 500px;
+	font-size: 30px;
+	line-height: 40px;
 }
 .popup {
 	position: fixed;
@@ -193,16 +194,16 @@ p {
 		left: 0;
 	}
 	&__close {
-		background: url(../img/cross.png) 0 0 / 100% no-repeat;
+		background: url(../img/krest.png) 0 0 / 100% no-repeat;
 		position: absolute;
-		right: 42px;
-		top: 35px;
-		width: 30px;
-		height: 30px;
-		transition: all 0.8s ease-in-out 0s;
+		right: 22px;
+		top: 22px;
+		width: 40px;
+		height: 40px;
+		transition: all 0.3s ease-in-out 0s;
 	}
 	&__close:hover {
-		transform: rotate(360deg);
+		transform: rotate(180deg);
 	}
 	&__body {
 		min-height: 100%;
@@ -213,97 +214,51 @@ p {
 	}
 	&__content {
 		position: relative;
-		width: 729px;
-		height: 600px;
-		background: #1e2026;
+		
+		background: #ecf0f0;
 		color: #666;
 		max-width: 800px;
 		padding: 35px 85px 58px 85px;
 		position: relative;
 		transition: all 0.8s ease 0s;
 		opacity: 0;
+		border-radius: 20px;
 		transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
 	}
-	&__content2 {
-		height: 517px;
-	}
-	&__title {
-		text-transform: uppercase;
-		max-width: 227px;
-		text-align: center;
-		margin: 0 auto 55px auto;
-		line-height: 22px;
-	}
+	
 	&__form {
 		display: flex;
 		flex-direction: column;
 	}
-	&__name {
-		margin-bottom: 36px;
-	}
-	&__name2 {
-		margin-bottom: 46px;
-	}
+	
 	&__input {
-		background-color: transparent;
-		border-bottom: 2px solid #888c8e;
-		font-size: 18px;
-		text-transform: uppercase;
-		padding-bottom: 25px;
-		line-height: 22px;
+		border: 2px solid #888c8e;border-radius: 20px;
+		font-size: 22px;
+		padding: 10px;padding-left: 15px;
+		max-height: 150px;
 		letter-spacing: 0.1em;
 	}
-	&__mail {
-		margin-bottom: 38px;
-	}
-	&__tel {
-		margin-bottom: 28px;
-	}
-	&__privacy {
-		display: flex;
-	}
-	&__checkbox-label {
-		margin-right: 16px;
-	}
-	&__text {
-		font-size: 10px;
-		max-width: 321px;
-		line-height: 12px;
-		letter-spacing: 0.1em;
-		margin-bottom: 72px;
-		margin-left: 16px;
+	&__input::placeholder {
+		font-size: 22px;
 	}
 }
-.popup * {
-	color: #c9c9c9;
-}
+// .popup * {
+// 	color: #c9c9c9;
+// }
+.standart__button {
+	font-size: 36px;
+	color: #fff;
+	width: 100%;
+	max-width: 350px;
 
-@media (min-width: 640px) {
-	.container {
-		max-width: 640px;
-	}
-}
+	border-radius: 35px;
 
-@media (min-width: 768px) {
-	.container {
-		max-width: 768px;
-	}
-}
+	display: flex;
 
-@media (min-width: 1024px) {
-	.container {
-		max-width: 1024px;
-	}
-}
+	align-items: center;
 
-@media (min-width: 1280px) {
-	.container {
-		max-width: 1280px;
-	}
-}
+	justify-content: center;
 
-@media (min-width: 1536px) {
-	.container {
-		max-width: 1536px;
-	}
+	line-height: 70px;
+	background: linear-gradient(to right, #52a0fd 0%, #00e2fa 80%, #00e2fa 100%);
 }

@@ -179,25 +179,25 @@ p {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 788px) {
   .container {
     max-width: 768px;
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1044px) {
   .container {
     max-width: 1024px;
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1300px) {
   .container {
     max-width: 1280px;
   }
 }
 
-@media (min-width: 1536px) {
+@media (min-width: 1626px) {
   .container {
     max-width: 1536px;
   }
