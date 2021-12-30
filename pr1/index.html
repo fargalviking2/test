@@ -6,6 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script defer src="https://cdn.tailwindcss.com"></script>
+
 	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="dist/tailwind.css">
 	<link rel="stylesheet" href="src/main.css">
@@ -14,24 +15,29 @@
 
 <body>
 	<div class="wrapper">
+		<div class="header__burger-area">
+			<div class="header__burger">
+				<span></span>
+			</div>
+		</div>
 		<nav>
-			<div class="flex-col flex fixed right-6 z-10 menu">
-				<button id="linkMain" class="text-center text-xl  mb-3">
+			<div class="flex-col items-center flex fixed right-6 z-10 menu">
+				<button id="linkMain" class="text-center sm:text-lg 2xl:text-xl  mb-3">
 					<p class="blue-text transition-all hover:font-bold ">Главная</p>
 				</button>
-				<button id="linkAboutMe" class="text-center text-xl mb-3">
+				<button id="linkAboutMe" class="text-center sm:text-lg 2xl:text-xl mb-3">
 					<p class="blue-text hover:font-bold ">Обо мне</p>
 				</button>
-				<button id="linkAboutBook" class="text-center text-xl mb-3 ">
+				<button id="linkAboutBook" class="text-center sm:text-lg 2xl:text-xl mb-3 ">
 					<p class="blue-text hover:font-bold ">О книге</p>
 				</button>
-				<button id="linkBookContent" class="text-center text-xl mb-3">
+				<button id="linkBookContent" class="text-center sm:text-lg 2xl:text-xl mb-3">
 					<p class="blue-text hover:font-bold ">Содержание</p>
 				</button>
-				<button id="linkReviews" class="text-center text-xl mb-3">
+				<button id="linkReviews" class="text-center sm:text-lg 2xl:text-xl mb-3">
 					<p class="blue-text hover:font-bold ">Отзывы</p>
 				</button>
-				<button id="linkBuy" class="text-center text-xl mb-5">
+				<button id="linkBuy" class="text-center sm:text-lg 2xl:text-xl mb-5">
 					<p class="blue-text hover:font-bold">Купить</p>
 				</button>
 				<div class="flex">
@@ -44,20 +50,21 @@
 				</div>
 			</div>
 		</nav>
-		<div class="container pl-20 ">
+		<div class="container px-5 lg:pl-20 ">
 			<div id="main" class="book">
-				<div class="book__img">
+				<div class="book__img self-start">
 					<img class="book__img-img" src="img/cover.jpg" alt="">
 				</div>
 				<div class="book__content">
-					<h1 class="text-3xl font-medium mb-12">Книга «Привычки. Лучшая версия тебя»</h1>
+					<h1 class="text-xl lg:text-3xl font-medium mb-4 sm:mb-12">Книга «Привычки. Лучшая версия тебя»</h1>
 					<div class="mb-6 flex justify-between items-center">
 						<p class="book__text-short-p">Меня зовут Кристина Акименко, <br>
 							я автор книги «Привычки. Лучшая версия тебя»</p>
 						<img class="book__act-img mr-10" src="img/act.png" alt="">
 					</div>
 
-					<p class="book__text mb-10">В ней я делюсь своим опытом и рассказываю, как шаг за шагом можно изменить жизнь,
+					<p class="book__text mb-5 sm:mb-10">В ней я делюсь своим опытом и рассказываю, как шаг за шагом можно изменить
+						жизнь,
 						добавляя в свой распорядок простые, но эффективные привычки. Книга содержит большое количество
 						практического материала, поданного не сухим языком учебника, а в художественной форме, что делает усвоение
 						легким и увлекательным.</p>
@@ -67,57 +74,64 @@
 						пространства и получать подсказки, как и в каком направлении
 						развиваться.</p>
 					<p class="book__text mb-8">Закажи мою книгу прямо сейчас и давай достигать поставленные цели вместе! </p>
-					<a href="#buy"><button class="standart__button mx-auto">Заказать</button></a>
+					<a href="#buy"><button class="standart__button px-12 mx-auto">Заказать</button></a>
 
 				</div>
 
 			</div>
-			<div id="about-me" class="flex mb-24">
-				<div class="mr-28">
-					<img src="img/image10.jpg" alt="" class="women-img">
+			<div id="about-me" class="flex flex-col-reverse sm:flex-row mb-10 lg:mb-24">
+				<div class="lg:mr-28">
+					<img src="img/image10.jpg" alt="" class="women-img mx-auto">
 				</div>
 				<div class="">
-					<h2 class="text-4xl mt-10 mb-10 blue-text font-medium">Обо мне</h2>
-					<p class="mb-10 about-me__text">Я построила бизнес в области ИТ и консалтинга с оборотом 300 млн рублей. Кроме того, я много
+					<h2 class="text-2xl lg:text-4xl sm:mt-10 mb-5 sm:mb-10 blue-text font-medium">Обо мне</h2>
+					<p class="mb-5 sm:mb-10 about-me__text">Я построила бизнес в области ИТ и консалтинга с оборотом 300 млн
+						рублей. Кроме
+						того, я много
 						инвестирую в качестве бизнес -ангела.</p>
-					<p class="about-me__text">Занимаюсь марафонским бегом. Воспитываю троих детей из разных поколений.</p>
+					<p class="about-me__text mb-5 sm:mb-0">Занимаюсь марафонским бегом. Воспитываю троих детей из разных поколений.</p>
 				</div>
 			</div>
-			<div id="about-book" class="about-book mb-24">
-				<h2 class="text-4xl mt-4 mb-10 blue-text font-medium">О книге</h2>
-				<p class="mb-14 leading-8">Книга состоит из 4-х важных областей, в которых мы формируем свои привычки: <br>
+			<div id="about-book" class="about-book mb-10 lg:mb-24">
+				<h2 class="text-2xl  lg:text-4xl mt-4 mb-5 sm:mb-10 blue-text font-medium">О книге</h2>
+				<p class="mb-7 sm:mb-14 leading-5 lg:leading-8">Книга состоит из 4-х важных областей, в которых мы формируем свои привычки: <br>
 					- Детство<br>
 					- Осознанная жизнь, ориентированная на дизайн пространства <br>
 					- Спорт как драйвер жизни и бизнеса <br>
 					- Духовный рост через медитацию</p>
-				<h3 class="font-medium text-3xl mb-10">Что ты получишь после прочтения моей книги</h3>
-				<div class="flex mb-14">
-					<div class="w-64 h-64 mr-6 font-medium text-xl pl-14 pr-16 py-16 text-center relative bg-img">
+				<h3 class="font-medium text-xl lg:text-3xl mb-5 sm:mb-10">Что ты получишь после прочтения моей книги</h3>
+				<div class="flex items-center flex-col sm:flex-row mb-7 sm:mb-14">
+					<div
+						class="w-64 h-64 mb-4 sm:mb-0 sm:mr-6 font-medium text-xl sm:text-lg 2xl:text-xl pl-14 pr-16 py-16 text-center relative bg-img">
 						<p class="big-number">1</p>
 						<h4>Ответ, в каких областях тебе нужны привычки</h4>
 					</div>
-					<div class="w-64 h-64 mr-6 font-medium text-xl pl-14 pr-16 py-12 text-center relative bg-img2">
+					<div
+						class="w-64 h-64 mb-4 sm:mb-0 sm:mr-6 font-medium text-xl sm:text-lg 2xl:text-xl pl-14 pr-16 py-12 text-center relative bg-img2">
 						<p class="big-number">2</p>
 						<h4>Какие привычки тебе нужно иметь в бизнесе?</h4>
 					</div>
-					<div class="w-64 h-64 mr-6 font-medium text-xl pl-14 pr-16 py-12 text-center relative bg-img3">
+					<div
+						class="w-64 h-64 mb-4 sm:mb-0 sm:mr-6 font-medium text-xl sm:text-lg 2xl:text-xl pl-14 pr-16 py-12 text-center relative bg-img3">
 						<p class="big-number">3</p>
 						<h4>Каких привычек не хватает в обычной жизни?</h4>
 					</div>
-					<div class="w-64 h-64 mr-6 font-medium text-xl pl-14 pr-16 py-20 text-center relative bg-img4">
+					<div
+						class="w-64 h-64 mb-4 sm:mb-0 sm:mr-6 font-medium text-xl sm:text-lg 2xl:text-xl pl-14 pr-16 py-20 text-center relative bg-img4">
 						<p class="big-number">4</p>
 						<h4>Чего тебе не хватает в дизайне?</h4>
 					</div>
-					<div class="w-64 h-64 font-medium text-xl pl-14 pr-16 py-12 text-center relative bg-img5">
+					<div
+						class="w-64 h-64 font-medium text-xl sm:text-lg 2xl:text-xl pl-14 pr-16 py-12 text-center relative bg-img5">
 						<p class="big-number">5</p>
 						<h4>Какие способы духовного роста тебе нужны?</h4>
 					</div>
 				</div>
-				<p class="mr-52 text-2xl">Самое интересное - на все вопросы ты ответишь сам после каждой главы, письменно,
+				<p class="lg:mr-52 lg:text-2xl">Самое интересное - на все вопросы ты ответишь сам после каждой главы, письменно,
 					для этого выделены специальные строки.</p>
 			</div>
-			<div id="uniqueness-book" class="uniqueness-book mb-24">
-				<h2 class="text-4xl mt-4 mb-12 blue-text font-medium">Уникальность книги</h2>
+			<div id="uniqueness-book" class="uniqueness-book mb-10 lg:mb-24">
+				<h2 class="text-2xl  lg:text-4xl mt-4 mb-6 sm:mb-12 blue-text font-medium">Уникальность книги</h2>
 				<div class="relative">
 					<div class="w-80 hidden overflow-hidden">
 						<div class="image-slider2 swiper-container relative">
@@ -157,66 +171,76 @@
 					</div>
 				</div>
 			</div>
-			<div id="book-content" class="book-content  mb-24  relative">
-				<h2 class="text-4xl mt-4 mb-12 blue-text font-medium">Содержание книги</h2>
-				<div class="image-slider3 swiper-container mx-20  overflow-x-hidden shadow-page">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide shadow-page">
-							<div class="">
-								<img src="img/Untitled-1.png" alt="">
+			<div id="book-content" class="book-content  mb-10 lg:mb-24  relative">
+				<h2 class="text-2xl   lg:text-4xl mt-4 mb-12 blue-text font-medium">Содержание книги</h2>
+				<div class="relative">
+					<div class="image-slider3 swiper-container sm:mx-20  overflow-x-hidden shadow-page">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide shadow-page">
+								<div class="">
+									<img src="img/Untitled-1.png" alt="">
+								</div>
+							</div>
+							<div class="swiper-slide shadow-page">
+								<div class="">
+									<img src="img/Untitled-2.png" alt="">
+								</div>
+							</div>
+							<div class="swiper-slide shadow-page">
+								<div class="">
+									<img src="img/Untitled-3.png" alt="">
+								</div>
 							</div>
 						</div>
-						<div class="swiper-slide shadow-page">
-							<div class="">
-								<img src="img/Untitled-2.png" alt="">
-							</div>
+						<div class="swiper-button-prev3 slider1-nav">
 						</div>
-						<div class="swiper-slide shadow-page">
-							<div class="">
-								<img src="img/Untitled-3.png" alt="">
-							</div>
+						<div class="swiper-button-next3 slider1-nav">
 						</div>
-					
-					</div>
-					<div class="swiper-button-prev3 slider1-nav">
-					</div>
-					<div class="swiper-button-next3 slider1-nav">
 					</div>
 				</div>
+
 			</div>
-			<div id="reviews" class="reviews  mb-24">
-				<h2 class="text-4xl mt-4 mb-10 blue-text font-medium">Отзывы</h2>
+			<div id="reviews" class="reviews  mb-10 lg:mb-24">
+				<h2 class="text-2xl lg:text-4xl mt-4 mb-5 sm:mb-10 blue-text font-medium">Отзывы</h2>
 				<div class="image-slider swiper-container relative">
 					<div class="swiper-wrapper">
-						<div class="swiper-slide slider1 px-16">
-							<div class="rounded-xl bg-green-200 p-24">
-								<p class="mb-4">Если мы с вами захотим определить «пространство», то, скорее всего, увязнем в
+						<div class="swiper-slide slider1 sm:px-16">
+							<div class="rounded-3xl bg-green-200 p-4 sm:p-24 ">
+								<p class="mb-2 sm:mb-4 text-sm sm:text-lg">Если мы с вами захотим определить «пространство», то, скорее
+									всего, увязнем в
 									долгой дискуссии. Является ли оно просто бесконечной пустотой, лежащей в основе
 									всего? Или это пустота между объектами? А что, если пространство - это физическая
 									сущность?
 								</p>
-								<p class="mb-4">
+								<p class="mb-2 sm:mb-4 text-sm sm:text-lg">
 									Оказывается, природа пространства одна из величайших и самых странных загадок
 									Вселенной. Автор в своей книге затрагивает и внешний, и внутренний смысл
 									пространства, переходя из одного в другое, продвигает свои идеи и открытия,
 									накопив опыт в личной жизни, в бизнесе, в путешествиях. Сначала уводит нас в
 									художественное повествование, а потом даёт конкретные мотивирующие советы.</p>
-								<p class="mb-4">
+								<p class="mb-2 sm:mb-4 text-sm sm:text-lg">
 									Хочу отметить, что автор не претендует на истину в последней инстанции, но хочет
 									помочь людям обрести уверенность в собственных силах, раскрасить жизнь новыми
 									впечатлениями и из любой ситуации выходить победителем.</p>
-								<p class="mb-6">Рекомендую к прочтению и размышлению!</p>
-								<p class="text-right font-medium">Юрий Белонощенко.</p>
+								<p class="mb-2 sm:mb-4 sm:mb-6 text-sm sm:text-lg">Рекомендую к прочтению и размышлению!</p>
+								<p class="text-lg text-right"><span class=" font-medium sm:text-lg 2xl:text-xl">Юрий Белонощенко.</span>
+									Основатель и
+									стратег международной франчайзинговой сети детских центров «Бэби-клуб». Отец пятерых детей. Автор
+									метода и одноименного ежедневника по достижению целей «Сила маленьких шагов». Инициатор социального
+									проекта Kid-Frendly Здесь рады детям. Основатель сети школ «Белая Ворона». Бэби-блогер, автор
+									youtube-канала «Отцы и дети».</p>
 							</div>
 						</div>
-						<div class="swiper-slide slider1 px-16">
-							<div class="rounded-xl bg-green-200 p-24">
-								<p class="mb-4">Самое главное, что надо знать про бег и про личное развитие, это то, что побеждают
+						<div class="swiper-slide slider1 sm:px-16">
+							<div class="rounded-3xl bg-green-200 p-4 sm:p-24">
+								<p class="mb-2 sm:mb-4 text-sm sm:text-lg">Самое главное, что надо знать про бег и про личное развитие,
+									это то, что
+									побеждают
 									маленькие шаги. Не так важно, какую цель вы поставите, важно, что вы ее поставите. А дальше - каждый
 									день вы будете к ней приближаться на один шаг. Проще всего это делать при помощи трекера привычек
 									(программы, где вы каждый день ставите себе 1 или 0).
 								</p>
-								<p class="mb-4">
+								<p class="mb-2 sm:mb-4 text-sm sm:text-lg">
 									Что нужно сделать: для начала надо составить свой список маленьких шагов. То есть привычек. Не
 									глобальных целей, а именно привычек, которые вы хотите делать каждый день. А дальше - каждый день
 									честно отвечать себе, выполнили ли вы эти небольшие действия. Не так важно, отказались ли вы от лифта
@@ -224,32 +248,40 @@
 									слово по-английски сегодня. Зато через год такого обучения — это плюс 300 слов. Не так важно,
 									позвонили ли вы родителям сегодня. Зато через год звонков — это новый уровень отношений. Думаю, логика
 									понятна.</p>
-								<p class="mb-4">
+								<p class="mb-2 sm:mb-4 text-sm sm:text-lg">
 									То же и с бегом. Можно пробежать 3 км перед сном, а можно не пробежать. Ничего это не изменит. Но за
 									год — это 1000 километров и ВООБЩЕ другая физическая форма. Поэтому не так принципиально, хотите вы
 									пробежать полумарафон или марафон.
 								</p>
-								<p class="mb-6">А вот путь к любой из этих целей (даже если за день до старта вы не дай бог простудитесь
+								<p class="mb-4 sm:mb-6 text-sm sm:text-lg">А вот путь к любой из этих целей (даже если за день до старта
+									вы не дай бог
+									простудитесь
 									и вообще не побежите) - это то, что меняет жизни. И судьбы.
 								</p>
-								<p class="mb-6">Я рад, что Кристина придерживается такого же подхода.
+								<p class="mb-4 sm:mb-6 text-sm sm:text-lg">Я рад, что Кристина придерживается такого же подхода.
 								</p>
-								<p class="mb-6">Надеюсь, что после ее книги больше людей будет применять такой подход «маленьких шагов»
+								<p class="mb-4 sm:mb-6 text-sm sm:text-lg">Надеюсь, что после ее книги больше людей будет применять
+									такой подход «маленьких
+									шагов»
 									как в беге, так и в работе, и в обычной жизни.
 								</p>
-								<p class="text-right font-medium">Михаил Хомич. Заместитель председателя правительства Удмуртии. </p>
+								<p class="text-right font-medium sm:text-lg 2xl:text-xl">Михаил Хомич. Заместитель председателя
+									правительства Удмуртии.
+								</p>
 							</div>
 						</div>
-						<div class="swiper-slide slider1 px-16">
-							<div class="rounded-xl bg-green-200 p-24">
-								<p class="mb-4">«Рыбы не говорят о воде,» -- гласит восточная поговорка. Люди также редко задумываются о
+						<div class="swiper-slide slider1 sm:px-16">
+							<div class="rounded-3xl bg-green-200 sm:p-24">
+								<p class="mb-4 text-sm sm:text-lg">«Рыбы не говорят о воде,» -- гласит восточная поговорка. Люди также
+									редко
+									задумываются о
 									пространстве, хотя не только в нем живут и перемещаются – на самом деле, люди думают в пространстве,
 									не особенно этого замечая. «Правые» и «левые» политические партии, высокие идеи и низменные порывы,
 									подъем экономики и скатывание в кризис, понимание головы и вставание с колен, пробуксовки проекта и
 									опережающие идеи, пресловутый выход из зоны комфорта, и наконец, жизненный путь – путь! Большинство
 									абстрактных понятий формулируется в пространственных терминах, хотя чаще всего мы не отдаем себе отчет
 									в этом. Жизнь устроена пространственно, а по большому счету и сама жизнь – пространство.</p>
-								<p class="mb-4">
+								<p class="mb-4 text-sm sm:text-lg">
 									«Географы – это такие странные рыбы, которые говорят о воде,» -- перефразируя поговорку, написал в
 									своем учебнике по культурной географии англичанин Йон Андресон, пытаясь объяснить, что географический
 									взгляд способен увидеть за обыденным глубокие, неожиданные смыслы. Обустроенное человеком пространство
@@ -260,7 +292,7 @@
 									посещения зеленые зоны – очевидно не потому, что они вредны для здоровья, а потому что их сложно
 									контролировать («Значит, ценность контроля важнее ценности здоровья,» -- механически отметил географ).
 								</p>
-								<p class="mb-4">
+								<p class="mb-4 text-sm sm:text-lg">
 									Географический факультет очень символично размещен на самом верху знаменитой высотки МГУ на Воробьевых
 									горах. Отвлекшись на лекции, можно наблюдать столицу буквально с высоты птичьего полета. Однако,
 									отучившись положенное в геофаковских аудиториях с видом из окон на бескрайние перспективы, мало кто, в
@@ -271,31 +303,39 @@
 									площади, в самолете, или, не дай бог в больнице пытающимися осмыслить место, постичь пространство.
 									Автор – «из наших», живущих в пространстве, расширяющих освоенное и осмысленное. Автор приглашает в
 									путешествие!</p>
-								<p class="mb-6">Рекомендую к прочтению и размышлению!</p>
-								<p class="text-right font-medium">Замятина Надежда. Кандидат Географических наук, преподаватель МГУ им.
+								<p class="mb-4 sm:mb-6 text-sm sm:text-lg">Рекомендую к прочтению и размышлению!</p>
+								<p class="text-right font-medium sm:text-lg 2xl:text-xl">Замятина Надежда. Кандидат Географических наук,
+									преподаватель
+									МГУ им.
 									М. В. Ломоносова.</p>
 							</div>
 						</div>
-						<div class="swiper-slide slider1 px-16">
-							<div class="rounded-xl bg-green-200 p-24">
-								<p class="mb-4">Книга Кристины Акименко перепрошивает мозги в наступившей новой реальности. Коучмент,
+						<div class="swiper-slide slider1 sm:px-16">
+							<div class="rounded-3xl bg-green-200 sm:p-24">
+								<p class="mb-4 text-sm sm:text-lg">Книга Кристины Акименко перепрошивает мозги в наступившей новой
+									реальности.
+									Коучмент,
 									сканирование пространства, освоение личной территории — это набор-минимум, который вы вынесете из неё.
 									В наборе-оптимуме будут полезные вопросы и выводы самого автора, который на личном примере показывает,
 									как с помощью путешествия, спорта и духовной практики постичь...нет, не дзен, а личный путь, к
 									которому все стремятся, но который так не просто найти. У автора - получилось. </p>
-								<p class="mb-4">
+								<p class="mb-4 text-sm sm:text-lg">
 									Успешная бизнесвумен, жена и мама, марафонец и последователь традиций буддизма - Кристина Акименко
 									помогает начинающему и продолжающему искателю своего пути пройти его с проводником. Книга — это микс
 									из небанального опыта, страсти к путешествиям и самоисследованию, выводы острого аналитичного ума и
 									продолжительных поисков личной истины.
 								</p>
-								<p class="mb-4">«Выходить из окружения с любовью» рекомендует Кристина в одной из глав. А как в это
+								<p class="mb-4 text-sm sm:text-lg">«Выходить из окружения с любовью» рекомендует Кристина в одной из
+									глав. А как в
+									это
 									окружение войти? А как самому стать окружением, в которое стремятся попасть другие? За этими вопросами
 									– добро пожаловать в книгу. Желаю вам не сбиться с намеченного пути и использовать все инструменты из
 									плана-оптимума.
 								</p>
-								<p class="mb-6">Рекомендую к прочтению и размышлению!</p>
-								<p class="text-right font-medium">Екатерина Иноземцева. Автор бестселлеров «Стартап без купюр», «Как
+								<p class="mb-4 sm:mb-6 text-sm sm:text-lg">Рекомендую к прочтению и размышлению!</p>
+								<p class="text-right sm:text-lg 2xl:text-xl font-medium">Екатерина Иноземцева. Автор бестселлеров
+									«Стартап без купюр»,
+									«Как
 									стать популярным автором. Тексты на службе личного бренда. 5 шагов».</p>
 							</div>
 						</div>
@@ -307,51 +347,52 @@
 				</div>
 				<a href="#popup-review"><button class="standart__button mx-auto mt-12">Оставить отзыв</button></a>
 			</div>
-			<div id="buy" class="buy-book mb-24">
-				<h2 class="text-4xl mt-4 mb-10 blue-text font-medium">Купить книгу</h2>
-				<p class="mb-10">Ты можешь приобрести книгу у меня напрямую. Для этого отметь нужную версию книги и
+			<div id="buy" class="buy-book mb-5 sm:mb-10 lg:mb-24">
+				<h2 class="text-2xl lg:text-4xl mt-4 mb-5 sm:mb-10 blue-text font-medium">Купить книгу</h2>
+				<p class="mb-5 sm:mb-10">Ты можешь приобрести книгу у меня напрямую. Для этого отметь нужную версию книги и
 					произведи оплату в открывшейся форме. Я свяжусь с тобой для уточнения деталей и способа
 					доставки. Оплата доставки не включена в стоимость книги и производится курьеру по тарифам
 					курьерской службы.</p>
-				<div class="flex items-center">
+				<div class="flex flex-col sm:flex-row items-center">
 					<div class="mr-20">
-						<h4 class="font-medium text-xl mb-4">Стоимость печатной версии книги – 1 700 рублей</h4>
-						<h4 class="font-medium text-xl mb-4">PDF-версия – 500 рублей</h4>
-						<h4 class="font-medium text-xl mb-4">Также доступна для предзаказа аудио-книга</h4>
+						<h4 class="font-medium lg:text-2xl leading-5 mb-4">Стоимость печатной версии книги – 1 700 рублей</h4>
+						<h4 class="font-medium lg:text-2xl leading-5 mb-4">PDF-версия – 500 рублей</h4>
+						<h4 class="font-medium lg:text-2xl leading-5 mb-4">Также доступна для предзаказа аудио-книга</h4>
 					</div>
-					<a class="w-full" target="_blank" href="pay.html"><button class="standart__button h-20 mb-4">Купить</button></a>
+					<a class="" target="_blank" href="pay.html"><button
+							class="standart__button w-48 sm:w-80  mb-4">Купить</button></a>
 
 				</div>
 			</div>
 		</div>
 		<footer class="py-6 bg-gray-200">
-			<div class="container pl-20">
+			<div class="container px-5 lg:pl-20">
 				<div class="flex justify-between">
 					<div class="">
-						<div class="flex mb-7">
+						<div class="flex flex-col sm:flex-row mb-7">
 							<div class="mr-12">
-								<h2 class="text-xl">Кристина Акименко</h2>
-								<h2 class="text-xl">«Привычки. Лучшая версия тебя»</h2>
+								<h2 class="sm:text-lg 2xl:text-xl">Кристина Акименко</h2>
+								<h2 class="sm:text-lg 2xl:text-xl">«Привычки. Лучшая версия тебя»</h2>
 							</div>
 							<div class="">
-								<h4 class="text-xl">mail@mail.ru</h4>
+								<h4 class="sm:text-lg 2xl:text-xl">mail@mail.ru</h4>
 								<a href="tel:+7 985 773 37 45" class="">
 									<p>+7 985 773 37 45</p>
 								</a>
 							</div>
 						</div>
 						<div class="flex">
-							<a href="##"><img src="img/вк.png" alt="" class="w-10 mr-3"></a>
-							<a href="##"><img src="img/инстач.png" alt="" class="w-10 mr-3"></a>
-							<a href="##"><img src="img/телега.png" alt="" class="w-10 mr-3"></a>
-							<a href="##"><img src="img/ВА.png" alt="" class="w-10 mr-3"></a>
-							<a href="##"><img src="img/фб.png" alt="" class="w-10 mr-3"></a>
-							<a href="##"><img src="img/мессенджер.png" alt="" class="w-10 mr-3"></a>
+							<a href="##"><img src="img/вк.png" alt="" class="w-7 sm:w-10 mr-3"></a>
+							<a href="##"><img src="img/инстач.png" alt="" class="w-7 sm:w-10 mr-3"></a>
+							<a href="##"><img src="img/телега.png" alt="" class="w-7 sm:w-10 mr-3"></a>
+							<a href="##"><img src="img/ВА.png" alt="" class="w-7 sm:w-10 mr-3"></a>
+							<a href="##"><img src="img/фб.png" alt="" class="w-7 sm:w-10 mr-3"></a>
+							<a href="##"><img src="img/мессенджер.png" alt="" class="w-7 sm:w-10 mr-3"></a>
 						</div>
 					</div>
 
 					<div class="">
-						<img class="w-20" src="img/cover.jpg" alt="">
+						<img class="w-20 " src="img/cover.jpg" alt="">
 					</div>
 				</div>
 			</div>
@@ -368,7 +409,7 @@
 					<input type="email" placeholder="e-mail" class="popup__mail popup__input mb-4">
 					<textarea class="popup__input mb-6" placeholder="Ваше сообщение" name="" id="" cols="30" rows="10"></textarea>
 					<div class="relative z-10 standart__button mx-auto"><button type="submit" class="">Отправить</button></div>
-					
+
 				</form>
 			</div>
 		</div>
