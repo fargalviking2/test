@@ -1,0 +1,21 @@
+.header__logo p {
+	line-height: 16px;
+}
+.icon__link {
+	opacity: 1;
+	background-color: rgb(180, 36, 36);
+}
+.button__with-decor{box-sizing: content-box;}
+.header__content .container{
+	padding: 170px 0 0 0;
+}
+.aim__img{width: 200px; margin: 20px 0;}
+.button__decor2{left: 94%;}
+.mr20{padding-right: 20px;}
+.mb40{margin-bottom: 40px;}
+.price__container{z-index: 3;position: relative;}
+@media (max-width:1700px) {
+	.header__content .container{
+		padding: 70px 0 0 0;
+	}
+}
