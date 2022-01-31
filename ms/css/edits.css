@@ -16,21 +16,103 @@
   padding: 170px 0 0 0;
 }
 
+.aim__img,
+.aim__img2,
+.aim__img3,
+.aim__img4 {
+  width: 180px;
+  margin: 0px 0 10px 0;
+}
+
 .aim__img {
-  width: 200px;
-  margin: 20px 0;
+  -webkit-transform: rotate(-40deg);
+          transform: rotate(-40deg);
+}
+
+.aim__img2 {
+  -webkit-transform: rotate(220deg);
+          transform: rotate(220deg);
+}
+
+.aim__img3 {
+  -webkit-transform: rotate(130deg);
+          transform: rotate(130deg);
+}
+
+.aim__img4 {
+  -webkit-transform: rotate(170deg);
+          transform: rotate(170deg);
 }
 
 .button__decor2 {
   left: 94%;
 }
 
-.mr20 {
+.pr20 {
   padding-right: 20px;
 }
 
 .mb40 {
   margin-bottom: 40px;
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.learn__text-text a {
+  color: white;
+}
+
+.aim__image {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 460px;
+}
+
+.aim__block-item {
+  position: relative;
+}
+
+.aim__img-center {
+  width: 95px;
+  position: absolute;
+  top: 60px;
+  left: 55px;
+}
+
+.aim__img-center2 {
+  width: 100px;
+  position: absolute;
+  top: 28px;
+  left: 35px;
+}
+
+.aim__img-center3 {
+  width: 100px;
+  position: absolute;
+  top: 48px;
+  left: 30px;
+}
+
+.aim__img-center4 {
+  width: 100px;
+  position: absolute;
+  top: 38px;
+  left: 30px;
+}
+
+.aim__block-item-mb50 {
+  margin-bottom: 50px;
+}
+
+.aim__block-item p {
+  font-size: 19px;
 }
 
 .price__container {
@@ -42,4 +124,57 @@
   .header__content .container {
     padding: 70px 0 0 0;
   }
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="range"] {
+  width: 100%;
+  overflow: visible;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+
+input[type="range"] {
+  width: 100%;
+  -webkit-appearance: none;
+  background-color: #fff;
+  height: 2px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  cursor: ew-resize;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #bc4f54;
+}
+
+.input-wrapper input[type="number"] {
+  width: 80px;
+  text-align: center;
+  background-color: #ffffff;
+  height: 34px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #071124;
+}
+
+.input-wrapper {
+  margin-top: 20px;
 }
