@@ -47,9 +47,17 @@ const calculation = (totalCost = 20, anInitialFee = 5, creditTerm = 1500) => {
 new Swiper('.image-slider', {
 	speed: 400,
 	spaceBetween: 350,
-	loop: true, 
+	loop: true,
 	navigation: {
 		nextEl: '.right__arrow',
 		prevEl: '.swiper-button-prev1',
 	},
 });
+
+[].forEach.call(document.querySelectorAll('img[data-src]'), function (img) {
+	img.setAttribute('src', img.getAttribute('data-src'));
+	img.onload = function () {
+		img.removeAttribute('data-src');
+	};
+});
+console.log('her');
