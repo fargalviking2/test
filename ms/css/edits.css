@@ -176,7 +176,7 @@ input[type="range"]::-webkit-slider-thumb {
 .input-wrapper input[type="number"] {
   width: 80px;
   text-align: center;
-  padding-left: 15px;
+  padding-left: 0px;
   background-color: #c7c7c7;
   border-radius: 5px;
   height: 34px;
@@ -306,10 +306,15 @@ input[type="range"]::-webkit-slider-thumb {
   .aim__par {
     margin-top: 30px;
   }
-  .aim__img, .aim__img2, .aim__img3, .aim__img4 {
+  .aim__img,
+  .aim__img2,
+  .aim__img3,
+  .aim__img4 {
     width: 115px;
   }
-  .aim__img-center2, .aim__img-center3, .aim__img-center4 {
+  .aim__img-center2,
+  .aim__img-center3,
+  .aim__img-center4 {
     width: 60px;
   }
   .aim__img-center {
@@ -381,4 +386,26 @@ input[type="range"]::-webkit-slider-thumb {
   .learn__text-block-4 {
     padding: 10px 0 40px 0;
   }
+  .content__text {
+    width: 100%;
+  }
+  .diplom__image {
+    margin-left: 10px;
+  }
+  .text__title {
+    font-size: 16px;
+  }
+  .text__text {
+    font-size: 16px;
+  }
+}
+
+p.block__title {
+  font-family: "GothamLight";
+  font-size: 17px;
+}
+
+p.block__subtitle {
+  font-family: "GothamLight";
+  font-size: 11px;
 }
