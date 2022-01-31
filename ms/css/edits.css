@@ -120,6 +120,11 @@
   position: relative;
 }
 
+.form__price-wrapper {
+  z-index: -2;
+  position: relative;
+}
+
 @media (max-width: 1700px) {
   .header__content .container {
     padding: 70px 0 0 0;
@@ -167,7 +172,9 @@ input[type="range"]::-webkit-slider-thumb {
 .input-wrapper input[type="number"] {
   width: 80px;
   text-align: center;
-  background-color: #ffffff;
+  padding-left: 15px;
+  background-color: #c7c7c7;
+  border-radius: 5px;
   height: 34px;
   font-weight: 500;
   font-size: 18px;
@@ -177,4 +184,14 @@ input[type="range"]::-webkit-slider-thumb {
 
 .input-wrapper {
   margin-top: 20px;
+}
+
+.content__text {
+  width: 45%;
+  max-width: 560px;
+  padding: 33px 49px 50px 50px;
+}
+
+.text__block2 {
+  width: 55%;
 }

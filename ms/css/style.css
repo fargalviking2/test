@@ -609,7 +609,7 @@ body {
   font-family: 'GothamBook';
   font-style: normal;
   font-weight: normal;
-  font-size: 46px;
+  font-size: 36px;
   line-height: 110%;
   color: #2D2926;
   z-index: 2;
@@ -772,6 +772,14 @@ body {
 }
 .price__block-back {
   background: #F2DDDE;
+}
+.price__block-back2 {
+  padding: 10px;
+  box-shadow: 0 0 15px 3px #bbbbbb;
+  border-radius: 10px;
+  background: #F2DDDE;
+  position: relative;
+  z-index: 5;
 }
 .price__sales {
   position: absolute;
@@ -1227,7 +1235,7 @@ body {
   font-family: 'GothamBook';
   font-style: normal;
   font-weight: normal;
-  font-size: 46px;
+  font-size: 36px;
   line-height: 110%;
   color: #FFFFFF;
 }
@@ -1290,10 +1298,10 @@ body {
 .price__back-2 {
   position: absolute;
   width: 430px;
-  top: -7%;
-  left: 74%;
+  top: -78px;
+  left: 65%;
   transform: translate(-74%);
-  z-index: 0;
+  z-index: 4;
 }
 .prime {
   background-color: #1F1C1A;
@@ -1352,7 +1360,7 @@ body {
   font-family: 'GothamLight';
   font-style: normal;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 130%;
   color: #FFFFFF;
   margin: 17px 0 0 0;
@@ -1371,6 +1379,9 @@ body {
   color: #FFFFFF;
   margin: 17px 0 0 0;
   text-decoration: underline;
+}
+.content__text p:last-child {
+  max-width: 350px;
 }
 .content__button {
   margin: 24px 0 0 0;
@@ -1405,7 +1416,7 @@ body {
   font-family: 'GothamBook';
   font-style: normal;
   font-weight: normal;
-  font-size: 38px;
+  font-size: 40px;
   line-height: 110%;
   color: #FFFFFF;
 }
@@ -1485,7 +1496,7 @@ body {
   background: url(../img/diplom__back.svg) no-repeat 200px top / 40%;
 }
 .diplom__image img {
-  width: 60%;
+  width: 44%;
 }
 .animate__block-2 {
   position: absolute;
@@ -1493,8 +1504,13 @@ body {
   top: 35%;
   transform: translate(-70%, -35%);
 }
+.animate__block-2 .animate__arrow-wrapper {
+  margin-top: -50px;
+  padding-left: 20px;
+  margin-right: -20px;
+}
 .animate__block-2 .animate__arrow-img {
-  margin: 20px 0 0 0;
+  margin: 0px 0px 0 -50px;
   transition-duration: 700ms;
 }
 .animate__block-2 .animate__arrow-img img {
@@ -1506,6 +1522,8 @@ body {
   font-family: 'GothamLight';
   width: 200px;
   transform: rotate(-15deg);
+  position: relative;
+  top: -70px;
 }
 .diplom__text {
   display: flex;
