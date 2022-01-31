@@ -538,9 +538,6 @@
   .aim__par p {
     font-size: 26px;
   }
-  .aim__block-item img {
-    width: 150px;
-  }
   .aim__text {
     width: 300px;
     padding: 0;
@@ -549,8 +546,8 @@
     padding: 5px 5px 50px 5px;
   }
   .aim__text-image {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 63px;
   }
   .invit {
     padding: 50px 0 100px 0;
@@ -559,7 +556,7 @@
     max-width: 310px;
   }
   .invit__title h2 {
-    font-size: 26px;
+    font-size: 22px;
   }
   .price {
     pad: 0;
@@ -636,13 +633,17 @@
     margin: 25px 0 0 0;
   }
   .gifts__left {
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
     left: 1%;
     top: 70%;
   }
   .gifts__left p {
     font-size: 10px;
+  }
+  .gifts__left-text {
+    font-size: 12px;
+    margin-left: -5px;
   }
   .gifts__image {
     width: 270px;
