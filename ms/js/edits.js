@@ -28,17 +28,6 @@ const assignValue = () => {
 
 assignValue();
 
-
-
-
-
-// const takeActiveBank = currentActive => {
-// const dataAttrValue = currentActive.dataset.name;
-// const currentBank = banks.find(bank => bank.name === dataAttrValue);
-// currentPrecent = currentBank.precents;
-// calculation(totalCost.value, anInitialFee.value, creditTerm.value);
-// }
-
 for (let input of inputsRange) {
 	input.addEventListener('input', () => {
 		assignValue();
@@ -47,17 +36,20 @@ for (let input of inputsRange) {
 }
 
 const calculation = (totalCost = 20, anInitialFee = 5, creditTerm = 1500) => {
-
-
-
-
-
 	monthlyPayment = totalCost * anInitialFee * creditTerm;
 	const monthlyPaymentArounded = Math.round(monthlyPayment);
 	if (monthlyPaymentArounded < 0) {
 		return false;
 	} else {
 		totalAmountOfCredit.innerHTML = `${monthlyPayment}`;
-
 	}
 }
+new Swiper('.image-slider', {
+	speed: 400,
+	spaceBetween: 350,
+	loop: true, 
+	navigation: {
+		nextEl: '.right__arrow',
+		prevEl: '.swiper-button-prev1',
+	},
+});

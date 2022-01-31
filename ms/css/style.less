@@ -825,11 +825,12 @@ body {
     background: #F2DDDE;
 }
 .price__block-back2 {
-	padding: 10px;
+	padding: 15px;
 	box-shadow: 0 0 15px 3px #bbbbbb;
 	border-radius: 10px;
 	background: #F2DDDE;position: relative;z-index: 5;
 }
+.price__block-back3{z-index: 100;position: relative;}
 .price__sales {
     position: absolute;
     top: 17%;
@@ -1399,6 +1400,7 @@ body {
     transform: translate(-74%);
     z-index:4;
 }
+.price__back3{width: 400px;top: -120px;}
 //-------------------------------//
 
 
@@ -1681,22 +1683,21 @@ body {
     transform: translate(-95%, -100%);
     background: url(../img/diplom__galery-back.png) no-repeat center/100%;
     width: 297px;
-    height: 600px;
+    height: 600px; 
 }
 .diplom__galery-wrapper {
-    position: relative;
-    width: 100%;
+    position: static;
+  
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+   
 
     .galery__main-img {
-        max-width: 210px;
-        margin: 30px 0 0 0;
+        max-width: 235px;
+        margin: 77px auto 0 auto;max-height: 495px;
+				margin-left: 30px;
     }
 }
+.swiper-container{position: static;overflow: hidden;}
 .left__arrow {
     width: 50px;
     height: 50px;
@@ -1710,7 +1711,7 @@ body {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    transition-duration: 300ms;
+    transition-duration: 300ms;z-index: 10;visibility: visible;
 
     &:hover {
         background: #d3c1c2;
@@ -1789,7 +1790,7 @@ body {
         font-family: 'GothamBook';
         font-style: normal;
         font-weight: normal;
-        font-size: 46px;
+        font-size: 36px;
         line-height: 110%;
         color: #FFFFFF;
     }
@@ -1810,7 +1811,7 @@ body {
     font-family: 'GothamMedium';
     font-style: normal;
     font-weight: 500;
-    font-size: 23px;
+    font-size: 22px;
     line-height: 130%;
     color: #FFFFFF;
     margin: 32px 0 0 0;
@@ -1819,7 +1820,7 @@ body {
     font-family: 'GothamLight';
     font-style: normal;
     font-weight: 300;
-    font-size:18px;
+    font-size:16px;
     line-height: 130%;
     color: #FFFFFF;
     opacity: 0.8;

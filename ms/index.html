@@ -6,6 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Стань топ мастером</title>
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="/css/modal-course.css">
 	<link rel="stylesheet" href="./css/style.css">
 	<link rel="stylesheet" href="./css/media.css">
@@ -498,7 +499,7 @@
 								<input id="an-initial-fee-range" value="10" class="input-range" type="range" min="1" max="20">
 							</div>
 						</div>
-						
+
 						<div class="block__value">
 							<p>1</p>
 							<p>20</p>
@@ -514,7 +515,7 @@
 								<input id="credit-term-range" value="2500" class="input-range" type="range" min="100" max="5000">
 							</div>
 						</div>
-						
+
 
 						<div class="block__value">
 							<p>100</p>
@@ -522,9 +523,10 @@
 						</div>
 
 						<div class="block__result">
-							<p>Вы сможете зарабатывать <span class="value" id="amount-of-credit">150000</span> р. в месяц на маникюре.</p>
+							<p>Вы сможете зарабатывать <span class="value" id="amount-of-credit">150000</span> р. в месяц на маникюре.
+							</p>
 						</div>
-						
+
 					</div>
 				</div>
 			</section>
@@ -757,7 +759,7 @@
 									<img src="./img/icon/animate-arrow-icon.svg" alt="img">
 								</div>
 							</div>
-							
+
 						</div>
 						<img src="./img/diplom__image.svg" alt="img">
 					</div>
@@ -779,9 +781,80 @@
 						</div>
 					</div>
 					<div class="diplom__galery">
-						<div class="diplom__galery-wrapper">
+						<div class="image-slider swiper-container">
+
+							<div class="swiper-wrapper diplom__galery-wrapper">
+								<div class="swiper-slide">
+									<img src="./img/galery-1/image-1.webp" alt="img" class="galery__main-img">
+									<div class=" "></div>
+								</div>
+								<div class="swiper-slide">
+									<img src="./img/galery-1/image-2.webp" alt="img" class="galery__main-img">
+
+								</div>
+								<div class="swiper-slide">
+									<img src="./img/galery-1/image-3.webp" alt="img" class="galery__main-img">
+								</div>
+								<div class="swiper-slide">
+									<img src="./img/galery-1/image-4.webp" alt="img" class="galery__main-img">
+								</div>
+								<div class="swiper-slide">
+									<img src="./img/galery-1/image-5.webp" alt="img" class="galery__main-img">
+								</div>
+								<div class="swiper-slide">
+									<img src="./img/galery-1/image-6.webp" alt="img" class="galery__main-img">
+								</div>
+								<div class="swiper-slide">
+									<img src="./img/galery-1/image-7.webp" alt="img" class="galery__main-img">
+								</div>
+								<div class="swiper-slide">
+									<img src="./img/galery-1/image-8.webp" alt="img" class="galery__main-img">
+								</div>
+								<div class="swiper-slide">
+									<img src="./img/galery-1/image-9.webp" alt="img" class="galery__main-img">
+								</div>
+								<div class="swiper-slide">
+									<img src="./img/galery-1/image-10.webp" alt="img" class="galery__main-img">
+								</div>
+								<div class="swiper-slide">
+									<img src="./img/galery-1/image-11.webp" alt="img" class="galery__main-img">
+								</div>
+								<div class="swiper-slide">
+									<img src="./img/galery-1/image-12.webp" alt="img" class="galery__main-img">
+								</div>
+								<div class="swiper-slide">
+									<img src="./img/galery-1/image-13.webp" alt="img" class="galery__main-img">
+								</div>
+								<div class="swiper-slide">
+									<img src="./img/galery-1/image-14.webp" alt="img" class="galery__main-img">
+								</div>
+								<div class="swiper-slide">
+									<img src="./img/galery-1/image-15.webp" alt="img" class="galery__main-img">
+								</div>
+								<div class="swiper-slide">
+									<img src="./img/galery-1/image-16.webp" alt="img" class="galery__main-img">
+								</div>
+								<div class="swiper-slide">
+									<img src="./img/galery-1/image-17.webp" alt="img" class="galery__main-img">
+								</div>
+								<div class="swiper-slide">
+									<img src="./img/galery-1/image-18.webp" alt="img" class="galery__main-img">
+								</div>
+							</div>
+							<div class="left__arrow swiper-button-prev1">
+								<img src="./img/icon/left-arrow-icon.png" alt="icon">
+							</div>
+							<div class="right__arrow swiper-button-next1">
+								<img src="./img/icon/right-arrow-icon.png" alt="icon">
+							</div>
+
+						</div>
+					</div>
+
+					<!-- <div class="diplom__galery image-slider swiper-container">
+						<div class="diplom__galery-wrapper swiper-wrapper">
 							<img src="./img/galery-1/image-1.webp" alt="img" class="galery__main-img">
-							<div class="galery__pag"></div>
+							<div class="galery__pag swiper-slide"></div>
 							<div class="left__arrow">
 								<img src="./img/icon/left-arrow-icon.png" alt="icon">
 							</div>
@@ -789,14 +862,42 @@
 								<img src="./img/icon/right-arrow-icon.png" alt="icon">
 							</div>
 						</div>
-					</div>
+					</div> -->
+
+					<!-- <div class="image-slider swiper-container">
+						<div class="diplom__galery">
+							<div class="diplom__galery-wrapper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<img src="./img/galery-1/image-1.webp" alt="img" class="galery__main-img">
+										<div class="galery__pag "></div>
+									</div>
+									<div class="swiper-slide">
+										<img src="./img/galery-1/image-2.webp" alt="img" class="galery__main-img">
+										<div class="galery__pag "></div>
+									</div>
+									<div class="swiper-slide">
+										<img src="./img/galery-1/image-3.webp" alt="img" class="galery__main-img">
+										<div class="galery__pag "></div>
+									</div>
+								</div>
+								
+							</div>
+							<div class="left__arrow">
+								<img src="./img/icon/left-arrow-icon.png" alt="icon">
+							</div>
+							<div class="right__arrow">
+								<img src="./img/icon/right-arrow-icon.png" alt="icon">
+							</div>
+						</div>
+					</div>	 -->
 				</div>
 			</section>
 
 			<section class="price">
 				<img src="./img/time__image.svg" alt="img" class="price__back-top">
 				<img src="./img/time__image.svg" alt="img" class="price__back-bottom">
-				<img src="./img/price__image-2.webp" alt="img" class="price__back price__back-2">
+				<img src="./img/red-girl.webp" alt="img" class="price__back3 price__back-2">
 				<img src="./img/price__sales.svg" alt="img" class="price__sales">
 				<div class="price__container">
 					<div class="price__title">
@@ -811,7 +912,7 @@
 							<p>Рассрочка без скидки <span>6200 р./месяц</span></p>
 						</div>
 						<div class="price__block-3">
-							<div class="price__block-back">
+							<div class="price__block-back2 price__block-back3">
 								<p class="price__par-title">Полина Максимова</p>
 								<p class="price__par-text">Звезда российского шоу бизнеса, актриса, рекомендует E.Mi</p>
 							</div>
@@ -1740,11 +1841,12 @@
 			</div>
 		</footer>
 	</div>
+	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 	<script src="./js/edits.js"></script>
 	<script src="./js/jquery-3.6.0.min.js"></script>
-	<script src="./js/first-galery.js"></script>
+	<!-- <script src="./js/first-galery.js"></script> -->
 	<script src="./js/second-galery.js"></script>
-	
+
 </body>
 
 </html>
