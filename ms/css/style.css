@@ -163,17 +163,17 @@ body {
   text-transform: uppercase;
   color: white;
 }
-.header__title h1 .header__span-1 {
+.header__span-1 {
   font-size: 41px;
   line-height: 1.5;
   display: block;
 }
-.header__title h1 .header__span-2 {
+.header__span-2 {
   font-size: 39px;
   line-height: 1.5;
   display: block;
 }
-.header__title h1 .header__span-3 {
+.header__span-3 {
   font-size: 32px;
   line-height: 1.5;
   display: block;
@@ -1178,7 +1178,7 @@ body {
   align-items: center;
 }
 .calc__title h2 {
-  font-size: 42px;
+  font-size: 38px;
   color: white;
   text-align: center;
   font-family: 'GothamLight';
@@ -1302,14 +1302,15 @@ body {
 .price__back-2 {
   position: absolute;
   width: 430px;
-  top: -78px;
+  top: -64px;
   left: 65%;
   transform: translate(-74%);
   z-index: 4;
 }
 .price__back3 {
   width: 400px;
-  top: -120px;
+  top: -110px;
+  left: 61%;
 }
 .prime {
   background-color: #1F1C1A;
@@ -2044,7 +2045,7 @@ body {
   border-top: 2px solid gray;
   border-bottom: 2px solid gray;
   margin: 50px 0 0 0;
-  text-align: center;
+  text-align: left;
   font-family: 'GothamLight';
 }
 .course {
@@ -2382,6 +2383,7 @@ ul {
 .form__price-title {
   color: white;
   font-size: 18px;
+  font-family: 'GothamMedium';
   padding: 0 0 0 25px;
 }
 .form__price-block {
@@ -2395,6 +2397,7 @@ ul {
   height: 20px;
 }
 .form__price-block p {
+  font-size: 14px;
   color: white;
   margin: 0 0 0 10px;
 }

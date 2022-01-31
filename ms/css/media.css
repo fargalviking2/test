@@ -423,35 +423,46 @@
   }
   .menu-mobile p {
     padding: 15px 0 0 0;
-    font-size: 12px;
-    width: 150px;
+    font-size: 9px;
+    font-family: 'GothamMedium';
+    width: 185px;
   }
   .menu-mobile .header__logo-mobile {
-    padding: 15px 0 0 20px;
+    padding: 15px 0 0 12px;
+    max-width: 70px;
   }
   .menu-mobile .header__burger-mobile {
-    padding: 35px 20px 0 0;
+    padding: 25px 20px 0 0;
   }
   .header {
     height: auto;
     padding: 0 0 50px 0;
   }
   .header__content {
-    max-width: 320px;
+    max-width: 330px;
     margin: auto auto;
   }
   .header__subtitle {
-    margin: 100px 0 0 0;
+    margin: 60px 0 0 0;
     width: 300px;
+  }
+  .header__subtitle h3 {
+    font-size: 14px;
+    max-width: 150px;
   }
   .header__subtitle h3 .icon__link {
-    width: 25px;
-    height: 20px;
+    width: 27px;
+    height: 15px;
+    margin-left: 10px;
+    margin-bottom: -10px;
     padding: 0;
   }
+  .header__subtitle h3 .icon__link::after {
+    margin-top: 40px;
+  }
   .header__title {
-    width: 300px;
-    text-align: center;
+    max-width: 326px;
+    text-align: left;
   }
   .header__title h1 {
     font-size: 22px;
@@ -464,12 +475,12 @@
     width: 120px;
   }
   .header__image p {
-    font-size: 12px;
-    top: 80%;
-    left: -20px;
+    font-size: 9px;
+    top: -590px;
+    left: 45px;
   }
   .header__image p span {
-    font-size: 16px;
+    font-size: 20px;
   }
   .header__image .header__main {
     width: 150px;
@@ -481,10 +492,11 @@
     display: none;
   }
   .header__image .header__sales {
-    top: 170%;
+    top: -480px;
+    left: 8%;
   }
   .school__container {
-    max-width: 300px;
+    max-width: 310px;
   }
   .school__title h2 {
     font-size: 26px;
@@ -500,7 +512,7 @@
     font-size: 16px;
   }
   .time__container {
-    max-width: 300px;
+    max-width: 310px;
   }
   .time__image-1 {
     margin: -20px 0 50px 0;
@@ -512,7 +524,7 @@
     font-size: 16px;
   }
   .aim__container {
-    max-width: 300px;
+    max-width: 310px;
   }
   .aim__title {
     margin: 70px 0 0 0;
@@ -544,7 +556,7 @@
     padding: 50px 0 100px 0;
   }
   .invit__container {
-    max-width: 300px;
+    max-width: 310px;
   }
   .invit__title h2 {
     font-size: 26px;
@@ -615,7 +627,7 @@
     padding: 100px 0 50px 0;
   }
   .gifts__container {
-    max-width: 300px;
+    max-width: 310px;
   }
   .gifts__title h2 {
     font-size: 26px;
@@ -638,7 +650,7 @@
     transform: translate(-110%, -30%);
   }
   .learn__container {
-    max-width: 300px;
+    max-width: 310px;
   }
   .learn__title h2 {
     font-size: 26px;
@@ -663,7 +675,7 @@
     padding: 40px 0;
   }
   .result__container {
-    max-width: 300px;
+    max-width: 310px;
   }
   .result__title h2 {
     font-size: 26px;
@@ -672,7 +684,7 @@
     padding: 50px 0 100px 0;
   }
   .calc__container {
-    max-width: 300px;
+    max-width: 310px;
   }
   .calc__title h2 {
     font-size: 26px;
@@ -685,7 +697,7 @@
     font-size: 16px;
   }
   .star__container {
-    max-width: 300px;
+    max-width: 310px;
   }
   .star__decor {
     top: -20px;
@@ -719,7 +731,7 @@
     padding: 100px 0 50px 0;
   }
   .prime__container {
-    max-width: 300px;
+    max-width: 310px;
   }
   .content__image {
     margin: 130px 0 0 100px;
@@ -740,7 +752,7 @@
     width: 270px;
   }
   .brand__container {
-    max-width: 300px;
+    max-width: 310px;
   }
   .brand__title h2 {
     font-size: 26px;
@@ -758,7 +770,7 @@
     padding: 50px 0;
   }
   .diplom__container {
-    max-width: 300px;
+    max-width: 310px;
   }
   .diplom__title h2 {
     font-size: 26px;
@@ -776,7 +788,7 @@
     padding: 100px 0 50px 0;
   }
   .review__container {
-    max-width: 300px;
+    max-width: 310px;
   }
   .review__title h2 {
     font-size: 26px;
@@ -788,7 +800,7 @@
     padding: 50px 0 500px 0;
   }
   .work__container {
-    max-width: 300px;
+    max-width: 310px;
   }
   .work__title h2 {
     font-size: 26px;
@@ -804,7 +816,7 @@
     width: 300px;
   }
   .why__container {
-    max-width: 300px;
+    max-width: 310px;
   }
   .why__title {
     padding: 0;
@@ -822,7 +834,7 @@
     padding: 100px 0 50px 0;
   }
   .about__container {
-    max-width: 300px;
+    max-width: 310px;
   }
   .about__title {
     font-size: 26px;

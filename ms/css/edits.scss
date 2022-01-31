@@ -1,3 +1,6 @@
+body {
+	font-family: "GothamLight";
+}
 .header__logo p {
 	line-height: 16px;
 }
@@ -144,6 +147,8 @@ input[type="range"]::-webkit-slider-thumb {
 	font-size: 18px;
 	line-height: 22px;
 	color: #071124;
+	margin-left: 50%;
+	transform: translate(-50%, 0);
 }
 .input-wrapper {
 	margin-top: 20px;
@@ -154,4 +159,91 @@ input[type="range"]::-webkit-slider-thumb {
 	padding: 33px 49px 50px 50px;
 }
 
-.text__block2{width: 55%;}
+.text__block2 {
+	width: 55%;
+}
+@media (max-width: 575px) {
+	.header__title {
+		h1 {
+			.header__span-1 {
+				font-size: 26px;
+				margin-bottom: 5px;
+			}
+			.header__span-2 {
+				font-size: 24px;
+				margin-bottom: 10px;
+			}
+			.header__span-3 {
+				font-size: 20px;
+			}
+		}
+	}
+	.header__button {
+		margin-top: 33px;
+	}
+	.container {
+		width: 100%;
+	}
+	.header__block-1 {
+		display: flex;
+		max-width: 340px;
+		justify-content: space-around;
+	}
+	.header__image .header__main {
+		position: absolute;
+		right: 120px;
+		top: -100px;
+		width: 200px;
+	}
+	.header__image .header__ellipse {
+		width: 200px;
+		right: 120px;
+		top: -100px;
+	}
+	.header__block-2 {
+		align-self: flex-end;
+		max-width: 120px;
+	}
+	.header__block p span {
+		font-size: 24px;
+	}
+	.header__block p {
+		font-size: 12px;
+		max-width: 140px;
+	}
+	.main__button button {
+		margin-bottom: 20px;
+	}
+	.school {
+		padding-top: 60px;
+		padding-bottom: 100px;
+	}
+	.school__content {
+		margin-top: 30px;
+	}
+	.time__container {
+		flex-direction: column;
+		align-items: start;
+	}
+	.time__decor {
+		width: 20px;
+		height: 20px;
+		margin-top: -20px;
+		img {
+			max-width: 100%;
+			margin-bottom: 20px;
+		}
+	}
+	.time__text {
+		margin-top: 20px;
+		width: 100%;
+		p {
+			font-size: 22px;
+		}
+	}
+	.time__image-2{    margin: 30px 0 -20px 0;}
+	.aim__title h2 {font-size: 22px;}
+	.aim__subtitle h3 {font-size: 18px;}
+	.aim__par p{font-size: 18px;max-width: 240px;}
+	.aim__par{margin-top: 30px;}
+}
