@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="src/style.css">
+	<title>test task</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div v-cloak class="container" id="app">
+			<div v-if="winCounter<18" class="title">Раунд {{roundCounter}}, найдено пар: {{winCounter}}</div>
+			<div v-if="winCounter==18" class="win-title">Вы победили за {{roundCounter}} раундов</div>
+			<div class="grid-layout">
+				<div :class='{hidden: tile.hidden == true}' :style="{display:tile.display}" @click="play"
+					v-for="(tile, idx) in tiles" :key="tile" class="grid-element">
+					<div :style="{opacity:tile.blanketOpacity}" class="element-blanket"></div>
+					<div @click="sendIndex(idx)" :style="{backgroundColor:tile.color}" class="element-content"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://unpkg.com/vue@next"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
