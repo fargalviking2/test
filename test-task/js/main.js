@@ -238,6 +238,7 @@ const App = {
 
 					this.tiles[this.e2TargetIndex].blanketOpacity = 0;
 					if (this.element1 == this.element2) {
+						this.roundCounter++;
 						this.tiles[this.e1TargetIndex].hidden = true;
 						this.tiles[this.e2TargetIndex].hidden = true;
 						setTimeout(() =>
