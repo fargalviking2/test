@@ -233,11 +233,13 @@ const App = {
 					this.element1 = e.target.style.backgroundColor;
 					this.tiles[this.e1TargetIndex].blanketOpacity = 0;
 				}
+				if (this.e1TargetIndex==this.e2TargetIndex){this.playCounter--}
 				if (this.playCounter === 2) {
 					this.element2 = e.target.style.backgroundColor;
 
 					this.tiles[this.e2TargetIndex].blanketOpacity = 0;
-					if (this.element1 == this.element2) {
+					
+					if (this.element1 == this.element2 && this.e1TargetIndex!=this.e2TargetIndex) {
 						this.roundCounter++;
 						this.tiles[this.e1TargetIndex].hidden = true;
 						this.tiles[this.e2TargetIndex].hidden = true;
